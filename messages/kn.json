@@ -1,0 +1,169 @@
+{
+  "HomePage": {
+    "title": "ಹಲೋ ವರ್ಲ್ಡ್!"
+  },
+
+  "SplashScreen": {
+    "taglineFirstHalf": "ವೇಗವರ್ಧಿಸಿ",
+    "taglineLastHalf": "ನಿಮ್ಮ ಸಹಕಾರ"
+  },
+
+  "Ux": {
+    "FontsizeSelector": {
+      "title": "ಅಕ್ಷರದ ಗಾತ್ರ",
+      "small": "ಸಣ್ಣದು",
+      "medium": "ಮಧ್ಯಮ",
+      "large": "ದೊಡ್ಡದು"
+    },
+
+    "ThemeSelector": {
+      "title": "ಥೀಮ್",
+      "light": "ಹಗುರವಾದ ಗಾಳಿ",
+      "dark": "ನೆರಳಿನ ಐಶ್ವರ್ಯ",
+      "mint": "ಮಿಂಟ್ ಮೂಡ್",
+      "artic": "ಆರ್ಕ್ಟಿಕ್ ಹೊಳಪು",
+      "rose": "ಗುಲಾಬಿ ಅಲೆ",
+      "coral": "ಕೊರಲ್ ಎಂಬರ್",
+      "lilac": "ಲೈಲಾಕ್ ನಿಸ್ಸಳತೆ"
+    },
+
+    "LanguageSelector": {
+      "title": "ಭಾಷೆ",
+      "english": "ಇಂಗ್ಲಿಷ್",
+      "spanish": "ಸ್ಪ್ಯಾನಿಷ್",
+      "french": "ಫ್ರೆಂಚ್",
+      "german": "ಜರ್ಮನ್",
+      "italian": "ಇಟಾಲಿಯನ್",
+      "portuguese": "ಪೋರ್ಚುಗೀಸ್"
+    },
+
+    "ThemetypeSelector": {
+      "title": "ಥೀಮ್ ಪ್ರಕಾರ",
+      "dense": "ದಟ್ಟವಾದ",
+      "minimal": "ಕಡಿಮೆ",
+      "outlined": "ರೆಖಾಚಿತ್ರಿತ"
+    }
+  },
+
+  "Setup": {
+    "title": "ಸೆಟಪ್ ವಿಜಾರ್ಡ್",
+    "welcome": "Indryve ಗೆ ಸ್ವಾಗತ",
+    "description": "ನೀವು ನಿಮ್ಮ ಸಂಸ್ಥೆಯ ಬಗ್ಗೆ ಕೆಲವು ಪ್ರಮುಖ ವಿವರಗಳನ್ನು ನಮೂದಿಸುವುದರಿಂದ ಪ್ರಾರಂಭಿಸುತ್ತೀರಿ ಮತ್ತು ನಿಮ್ಮ ಇಚ್ಛಿತ ಸಂರಚನಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡುತ್ತೀರಿ. ನಂತರ, ನಾವು ನಿಮಗೆ ನಿರ್ವಾಹಕ ಖಾತೆಯನ್ನು ಸ್ಥಾಪಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತೇವೆ—ಅದಾದ ನಂತರ Indryve ಸಂಪೂರ್ಣವಾಗಿ ಬಳಸಲು ಸಿದ್ಧವಾಗಿರುತ್ತದೆ.",
+    "next": "ಆರಂಭಿಸೋಣ.",
+    "next2": "ಮುಂದೆ",
+    "finish": "ಮುಗಿಯಿತು",
+
+    "Tabs": {
+      "Tab1": "ಸಂಸ್ಥೆ",
+      "Tab2": "ಸಂಪರ್ಕ",
+      "Tab3": "ನಿರ್ವಾಹಕ",
+      "Tab4": "ಇಮೇಲ್",
+      "Tab5": "ಸುಧಾರಿತ",
+      "Tab6": "ಅನ್ವಯಗಳು"
+    },
+
+    "Organization": {
+      "title": "ನಿಮ್ಮ ಸಂಸ್ಥೆಯನ್ನು ಸೆಟ್ ಮಾಡೋಣ",
+      "description": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಸಂಸ್ಥೆಯ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ",
+      "subheading2": "ಸಂಸ್ಥೆಯ ಥೀಮ್ (ಐಚ್ಛಿಕ)",
+      "subheading1": "ಸಂಸ್ಥೆಯ ವಿವರಗಳು",
+      "name": "ಸಂಸ್ಥೆಯ ಹೆಸರು",
+      "nameError": "ಸಂಸ್ಥೆಯ ಹೆಸರು ಅಗತ್ಯವಿದೆ",
+      "size": "ಸಂಸ್ಥೆಯ ಗಾತ್ರ",
+      "sizeError": "ಸಂಸ್ಥೆಯ ಗಾತ್ರ ಅಗತ್ಯವಿದೆ",
+      "type": "ಸಂಸ್ಥೆಯ ಪ್ರಕಾರ",
+      "typeError": "ಸಂಸ್ಥೆಯ ಪ್ರಕಾರ ಅಗತ್ಯವಿದೆ",
+      "industry": "ಸಂಸ್ಥೆಯ ಉದ್ಯಮ",
+      "industryError": "ಸಂಸ್ಥೆಯ ಉದ್ಯಮ ಅಗತ್ಯವಿದೆ",
+      "logo": "ಸಂಸ್ಥೆಯ ಲೋಗೋ",
+      "logoError": "ಸಂಸ್ಥೆಯ ಲೋಗೋ ಅಗತ್ಯವಿದೆ",
+      "tagline": "ಸಂಸ್ಥೆಯ ಟ್ಯಾಗ್‌ಲೈನ್",
+      "taglineError": "ಸಂಸ್ಥೆಯ ಟ್ಯಾಗ್‌ಲೈನ್ ಅಗತ್ಯವಿದೆ"
+    },
+
+    "Contact": {
+      "title": "ಸಂಪರ್ಕಿಸೋಣ",
+      "description": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಸಂಪರ್ಕ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ",
+      "subheading": "ಸಂಪರ್ಕ ವಿವರಗಳು",
+      "name": "ಪೂರ್ಣ ಹೆಸರು",
+      "nameError": "ಪೂರ್ಣ ಹೆಸರು ಅಗತ್ಯವಿದೆ",
+      "website": "ಸಂಸ್ಥೆಯ ವೆಬ್‌ಸೈಟ್",
+      "websiteError": "ಸಂಸ್ಥೆಯ ವೆಬ್‌ಸೈಟ್ ಅಗತ್ಯವಿದೆ",
+      "emailError": "ಸಂಪರ್ಕ ಇಮೇಲ್ ಅಗತ್ಯವಿದೆ",
+      "phone": "ಸಂಪರ್ಕ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ",
+      "phoneError": "ಸಂಪರ್ಕ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ಅಗತ್ಯವಿದೆ",
+      "country": "ದೇಶ",
+      "countryError": "ದೇಶ ಅಗತ್ಯವಿದೆ"
+    },
+
+    "Admin": {
+      "title": "ನಿರ್ವಾಹಕನಿಗೆ ಸಂಪೂರ್ಣ ಅಧಿಕಾರ ನೀಡೋಣ!",
+      "description": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ನಿರ್ವಾಹಕ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ",
+      "subheading": "ನಿರ್ವಾಹಕ ವಿವರಗಳು",
+      "adminName": "ನಿರ್ವಾಹಕ ಬಳಕೆದಾರ ಹೆಸರು",
+      "adminNameError": "ನಿರ್ವಾಹಕ ಬಳಕೆದಾರ ಹೆಸರು ಅಗತ್ಯವಿದೆ",
+      "adminPassword": "ನಿರ್ವಾಹಕ ಪಾಸ್‌ವರ್ಡ್",
+      "adminPasswordError": "ನಿರ್ವಾಹಕ ಪಾಸ್‌ವರ್ಡ್ ಅಗತ್ಯವಿದೆ",
+      "adminRepeatPassword": "ಪಾಸ್‌ವರ್ಡ್ ಪುನರಾವರ್ತಿಸಿ",
+      "adminRepeatPasswordError": "ಪಾಸ್‌ವರ್ಡ್ ಪುನರಾವರ್ತನೆ ಅಗತ್ಯವಿದೆ",
+      "adminEmail": "ನಿರ್ವಾಹಕ ಇಮೇಲ್",
+      "adminEmailError": "ನಿರ್ವಾಹಕ ಇಮೇಲ್ ಅಗತ್ಯವಿದೆ"
+    },
+
+    "Email": {
+      "title": "ನಿಮ್ಮ ಮೇಲ್‌ಬಾಕ್ಸ್ ಸೆಟ್ ಮಾಡೋಣ",
+      "description": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಇಮೇಲ್ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ",
+      "subheading": "ನಿಮ್ಮ ಮೇಲ್‌ಬಾಕ್ಸ್ ವಿವರಗಳನ್ನು ನೀಡಿ",
+      "smtpHost": "SMTP ಹೋಸ್ಟ್",
+      "smtpHostError": "SMTP ಹೋಸ್ಟ್ ಅಗತ್ಯವಿದೆ",
+      "smtpPort": "SMTP ಪೋರ್ಟ್",
+      "smtpPortError": "SMTP ಪೋರ್ಟ್ ಅಗತ್ಯವಿದೆ",
+      "smtpUsername": "SMTP ಬಳಕೆದಾರ ಹೆಸರು",
+      "smtpUsernameError": "SMTP ಬಳಕೆದಾರ ಹೆಸರು ಅಗತ್ಯವಿದೆ",
+      "smtpPassword": "SMTP ಪಾಸ್‌ವರ್ಡ್",
+      "smtpPasswordError": "SMTP ಪಾಸ್‌ವರ್ಡ್ ಅಗತ್ಯವಿದೆ",
+      "smtpProtocol": "SMTP ಪ್ರೋಟೋಕಾಲ್",
+      "smtpProtocolError": "SMTP ಪ್ರೋಟೋಕಾಲ್ ಅಗತ್ಯವಿದೆ",
+      "test": "ಕನೆಕ್ಷನ್ ಪರೀಕ್ಷಿಸಿ",
+      "testSuccessMessage": "ಕನೆಕ್ಷನ್ ಯಶಸ್ವಿಯಾಗಿದೆ",
+      "testErrorMessage": "ಕನೆಕ್ಷನ್ ವಿಫಲವಾಗಿದೆ",
+      "smtpAuth": "SMTP ದೃಢೀಕರಣ ಸಕ್ರಿಯಗೊಳಿಸಿ",
+      "tls": "Start TLS ಸಕ್ರಿಯಗೊಳಿಸಿ"
+    },
+
+    "Advanced": {
+      "title": "ನಿಮ್ಮ ಸುಧಾರಿತ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಸೆಟ್ ಮಾಡೋಣ",
+      "description": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಸುಧಾರಿತ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ",
+      "subheading1": "ಬಳಕೆದಾರ ಸಂಗ್ರಹ ಸಂರಚನೆ",
+      "subheading2": "OAuth | OIDC ಸಂರಚನೆ (ಐಚ್ಛಿಕ)",
+      "self": "ಸ್ವಯಂ ನೋಂದಣಿ ಸಕ್ರಿಯಗೊಳಿಸಿ",
+      "ldap": "LDAP ಸಕ್ರಿಯಗೊಳಿಸಿ",
+      "issuerUrl": "Issuer URL",
+      "clientId": "ಕ್ಲೈಂಟ್ ID",
+      "clientSecret": "ಕ್ಲೈಂಟ್ ಸೀಕ್ರೆಟ್",
+      "issuerUrlError": "Issuer URL ಅಗತ್ಯವಿದೆ",
+      "clientIdError": "ಕ್ಲೈಂಟ್ ID ಅಗತ್ಯವಿದೆ",
+      "clientSecretError": "ಕ್ಲೈಂಟ್ ಸೀಕ್ರೆಟ್ ಅಗತ್ಯವಿದೆ"
+    },
+
+    "Applications": {
+      "title": "ನಿಮ್ಮ ಅನ್ವಯಗಳನ್ನು ಸೆಟ್ ಮಾಡೋಣ",
+      "description": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಅನ್ವಯ ವಿವರಗಳನ್ನು ನಮೂದಿಸಿ",
+      "subheading": "ನಿಮ್ಮ ಅನ್ವಯ URLಗಳನ್ನು ನೀಡಿ",
+      "indryve": "Indryve",
+      "mail": "Indryve ಮೇಲ್",
+      "chat": "Indryve ಚಾಟ್",
+      "video": "Indryve ವಿಡಿಯೋ",
+      "meet": "Indryve ಮೀಟ್",
+      "url": "ಅನ್ವಯ URL"
+    },
+
+    "Modal": {
+      "title": "ಧೃಡೀಕರಣ",
+      "description": "ದಯವಿಟ್ಟು ನೀವು ಮಾನವ ಎಂಬುದನ್ನು ದೃಢೀಕರಿಸಿ",
+      "verify": "ದೃಢೀಕರಿಸಿ",
+      "captchaValue": "ಕ್ಯಾಪ್ಚಾ ನಮೂದಿಸಿ",
+      "create": "ಅನ್ವಯಗಳನ್ನು ರಚಿಸಲಾಗುತ್ತಿದೆ"
+    }
+  }
+}

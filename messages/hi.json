@@ -1,0 +1,169 @@
+{
+  "HomePage": {
+    "title": "नमस्ते दुनिया!"
+  },
+
+  "SplashScreen": {
+    "taglineFirstHalf": "तेज़ करें",
+    "taglineLastHalf": "अपना सहयोग"
+  },
+
+  "Ux": {
+    "FontsizeSelector": {
+      "title": "फ़ॉन्ट आकार",
+      "small": "छोटा",
+      "medium": "मध्यम",
+      "large": "बड़ा"
+    },
+
+    "ThemeSelector": {
+      "title": "थीम",
+      "light": "हल्की हवा",
+      "dark": "गहरी छाया",
+      "mint": "मिंट मूड",
+      "artic": "आर्कटिक ग्लो",
+      "rose": "गुलाबी तरंग",
+      "coral": "कोरल एम्बर",
+      "lilac": "बैंगनी फुसफुसाहट"
+    },
+
+    "LanguageSelector": {
+      "title": "भाषा",
+      "english": "अंग्रेज़ी",
+      "spanish": "स्पेनिश",
+      "french": "फ्रेंच",
+      "german": "जर्मन",
+      "italian": "इतालवी",
+      "portuguese": "पुर्तगाली"
+    },
+
+    "ThemetypeSelector": {
+      "title": "थीम प्रकार",
+      "dense": "घना",
+      "minimal": "सरल",
+      "outlined": "रूपरेखा"
+    }
+  },
+
+  "Setup": {
+    "title": "सेटअप विज़ार्ड",
+    "welcome": "Indryve में आपका स्वागत है",
+    "description": "आप अपनी संस्था से संबंधित कुछ प्रमुख विवरण दर्ज करके और अपनी पसंदीदा कॉन्फ़िगरेशन सेटिंग्स चुनकर शुरू करेंगे। इसके बाद, हम आपको एक व्यवस्थापक खाता सेटअप करने में मदद करेंगे—और फिर Indryve उपयोग के लिए पूरी तरह तैयार हो जाएगा।",
+    "next": "चलिए शुरू करते हैं।",
+    "next2": "आगे",
+    "finish": "समाप्त",
+
+    "Tabs": {
+      "Tab1": "संगठन",
+      "Tab2": "संपर्क",
+      "Tab3": "व्यवस्थापक",
+      "Tab4": "ईमेल",
+      "Tab5": "उन्नत",
+      "Tab6": "अनुप्रयोग"
+    },
+
+    "Organization": {
+      "title": "आइए आपके संगठन को सेट करें",
+      "description": "कृपया अपने संगठन का विवरण दर्ज करें",
+      "subheading2": "संगठन थीम (वैकल्पिक)",
+      "subheading1": "संगठन विवरण",
+      "name": "संगठन का नाम",
+      "nameError": "संगठन का नाम आवश्यक है",
+      "size": "संगठन का आकार",
+      "sizeError": "संगठन का आकार आवश्यक है",
+      "type": "संगठन का प्रकार",
+      "typeError": "संगठन का प्रकार आवश्यक है",
+      "industry": "संगठन का उद्योग",
+      "industryError": "संगठन का उद्योग आवश्यक है",
+      "logo": "संगठन का लोगो",
+      "logoError": "संगठन का लोगो आवश्यक है",
+      "tagline": "संगठन की टैगलाइन",
+      "taglineError": "संगठन की टैगलाइन आवश्यक है"
+    },
+
+    "Contact": {
+      "title": "आइए जुड़ते हैं",
+      "description": "कृपया अपने संपर्क विवरण दर्ज करें",
+      "subheading": "संपर्क विवरण",
+      "name": "पूरा नाम",
+      "nameError": "पूरा नाम आवश्यक है",
+      "website": "संगठन की वेबसाइट",
+      "websiteError": "संगठन की वेबसाइट आवश्यक है",
+      "emailError": "संपर्क ईमेल आवश्यक है",
+      "phone": "संपर्क मोबाइल नंबर",
+      "phoneError": "संपर्क मोबाइल नंबर आवश्यक है",
+      "country": "देश",
+      "countryError": "देश आवश्यक है"
+    },
+
+    "Admin": {
+      "title": "आइए व्यवस्थापक को पूरी शक्ति दें!",
+      "description": "कृपया अपने व्यवस्थापक का विवरण दर्ज करें",
+      "subheading": "व्यवस्थापक विवरण",
+      "adminName": "व्यवस्थापक उपयोगकर्ता नाम",
+      "adminNameError": "व्यवस्थापक उपयोगकर्ता नाम आवश्यक है",
+      "adminPassword": "व्यवस्थापक पासवर्ड",
+      "adminPasswordError": "व्यवस्थापक पासवर्ड आवश्यक है",
+      "adminRepeatPassword": "पासवर्ड दोहराएं",
+      "adminRepeatPasswordError": "पासवर्ड दोहराना आवश्यक है",
+      "adminEmail": "व्यवस्थापक ईमेल",
+      "adminEmailError": "व्यवस्थापक ईमेल आवश्यक है"
+    },
+
+    "Email": {
+      "title": "आइए आपका मेलबॉक्स सेट करें",
+      "description": "कृपया अपने ईमेल विवरण दर्ज करें",
+      "subheading": "कृपया अपना मेलबॉक्स विवरण दर्ज करें",
+      "smtpHost": "SMTP होस्ट",
+      "smtpHostError": "SMTP होस्ट आवश्यक है",
+      "smtpPort": "SMTP पोर्ट",
+      "smtpPortError": "SMTP पोर्ट आवश्यक है",
+      "smtpUsername": "SMTP उपयोगकर्ता नाम",
+      "smtpUsernameError": "SMTP उपयोगकर्ता नाम आवश्यक है",
+      "smtpPassword": "SMTP पासवर्ड",
+      "smtpPasswordError": "SMTP पासवर्ड आवश्यक है",
+      "smtpProtocol": "SMTP प्रोटोकॉल",
+      "smtpProtocolError": "SMTP प्रोटोकॉल आवश्यक है",
+      "test": "कनेक्शन जांचें",
+      "testSuccessMessage": "कनेक्शन सफल हुआ",
+      "testErrorMessage": "कनेक्शन विफल हुआ",
+      "smtpAuth": "SMTP प्रमाणीकरण सक्षम करें",
+      "tls": "Start TLS सक्षम करें"
+    },
+
+    "Advanced": {
+      "title": "आइए आपकी उन्नत सेटिंग्स सेट करें",
+      "description": "कृपया अपने उन्नत विवरण दर्ज करें",
+      "subheading1": "उपयोगकर्ता स्टोर कॉन्फ़िगरेशन",
+      "subheading2": "OAuth | OIDC कॉन्फ़िगरेशन (वैकल्पिक)",
+      "self": "स्वयं पंजीकरण सक्षम करें",
+      "ldap": "LDAP सक्षम करें",
+      "issuerUrl": "Issuer URL",
+      "clientId": "क्लाइंट ID",
+      "clientSecret": "क्लाइंट सीक्रेट",
+      "issuerUrlError": "Issuer URL आवश्यक है",
+      "clientIdError": "क्लाइंट ID आवश्यक है",
+      "clientSecretError": "क्लाइंट सीक्रेट आवश्यक है"
+    },
+
+    "Applications": {
+      "title": "आइए आपके एप्लिकेशन सेट करें",
+      "description": "कृपया अपने एप्लिकेशन विवरण दर्ज करें",
+      "subheading": "कृपया अपने एप्लिकेशन यूआरएल दर्ज करें",
+      "indryve": "Indryve",
+      "mail": "Indryve मेल",
+      "chat": "Indryve चैट",
+      "video": "Indryve वीडियो",
+      "meet": "Indryve मीट",
+      "url": "एप्लिकेशन URL"
+    },
+
+    "Modal": {
+      "title": "सत्यापन",
+      "description": "कृपया पुष्टि करें कि आप मानव हैं",
+      "verify": "सत्यापित करें",
+      "captchaValue": "कैप्चा दर्ज करें",
+      "create": "एप्लिकेशन बनाए जा रहे हैं"
+    }
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "HomePage": {
+    "title": "Hello world!"
+  },
+
+  "SplashScreen": {
+    "taglineFirstHalf": "Accelerate",
+    "taglineLastHalf": "your Collaboration"
+  },
+
+  "Ux": {
+    "FontsizeSelector": {
+      "title": "Font Size",
+      "small": "small",
+      "medium": "Medium",
+      "large": "Large"
+    },
+
+    "ThemeSelector": {
+      "title": "Theme",
+      "light": "Light breeze",
+      "dark": "Shadow Luxe",
+      "mint": "Mint mood",
+      "artic": "Artic Glow",
+      "rose": "Rose wave",
+      "coral": "Coral Ember ",
+      "lilac": "Lilac whisper"
+    },
+
+    "LanguageSelector": {
+      "title": "Language",
+      "english": "English",
+      "spanish": "Spanish",
+      "french": "French",
+      "german": "German",
+      "italian": "Italian",
+      "portuguese": "Portuguese"
+    },
+    "ThemetypeSelector": {
+      "title": "Theme Type",
+      "dense": "Dense",
+      "minimal": "Minimal",
+      "outlined": "Outlined"
+    }
+  },
+  "Setup": {
+    "title": "Setup Wizard",
+    "welcome": "Welcome to Indryve",
+    "description": "You'll begin by entering a few key details about your organization and choosing your preferred configuration settings. Next, we'll help you set up an admin account—once that's done, Indryve will be fully ready to use.",
+    "next": "Lets get started.",
+    "next2": "Next",
+    "finish": "Finish",
+
+    "Tabs": {
+      "Tab1": "Organization",
+      "Tab2": "Contact",
+      "Tab3": "Admin",
+      "Tab4": "Email",
+      "Tab5": "Advanced",
+      "Tab6": "Applications"
+    },
+
+    "Organization": {
+      "title": "Let's setup your Organization",
+      "description": "Please enter your organization details",
+      "subheading2": "Organization Theme (Optional)",
+      "subheading1": "Organization Details",
+      "name": "Organization Name",
+      "nameError": "Organization Name is required",
+      "size": "Organization Size",
+      "sizeError": "Organization Size is required",
+      "type": "Organization Type",
+      "typeError": "Organization Type is required",
+      "industry": "Organization Industry",
+      "industryError": "Organization Industry is required",
+      "logo": "Organization Logo",
+      "logoError": "Organization Logo is required",
+      "tagline": "Organization Tagline",
+      "taglineError": "Organization Tagline is required"
+    },
+
+    "Contact": {
+      "title": "Let's Connect",
+      "description": "Please enter your Contact details",
+      "subheading": "Contact Details",
+      "name": "Full name",
+      "nameError": "Full name is required",
+      "website": "Organization Website",
+      "websiteError": "Organization Website is required",
+      "emailError": "Contact Email is required",
+      "phone": "Contact Mobile Number",
+      "phoneError": "Contact Mobile Number is required",
+      "country": "Country",
+      "countryError": "Country is required"
+    },
+
+    "Admin": {
+      "title": "Let's give Administrator the full power!",
+      "description": "Please enter your Admin details",
+      "subheading": "Admin Details",
+      "adminName": "Admin Username",
+      "adminNameError": "Admin Username is required",
+      "adminPassword": "Admin Password",
+      "adminPasswordError": "Admin Password is required",
+      "adminRepeatPassword": "Repeat Admin Password",
+      "adminRepeatPasswordError": "Repeat Admin Password is required",
+      "adminEmail": "Admin Email",
+      "adminEmailError": "Admin Email is required"
+    },
+
+    "Email": {
+      "title": "Let's setup your Mailbox",
+      "description": "Please enter your Email details",
+      "subheading": "Provide your Mailbox details",
+      "smtpHost": "SMTP Host",
+      "smtpHostError": "SMTP Host is required",
+      "smtpPort": "SMTP Port",
+      "smtpPortError": "SMTP Port is required",
+      "smtpUsername": "SMTP Username",
+      "smtpUsernameError": "SMTP Username is required",
+      "smtpPassword": "SMTP Password",
+      "smtpPasswordError": "SMTP Password is required",
+      "smtpProtocol": "SMTP Protocol",
+      "smtpProtocolError": "SMTP Protocol is required",
+      "test": "Test Connection",
+      "testSuccessMessage": "Connection successful",
+      "testErrorMessage": "Connection failed",
+      "smtpAuth": "Enable SMTP Authentication",
+      "tls": "Enable Start TLS"
+    },
+
+    "Advanced": {
+      "title": "Let's setup your Advanced Settings",
+      "description": "Please enter your Advanced details",
+      "subheading1": "User Store Configuration",
+      "subheading2": "OAuth | OIDC Configuration (Optional)",
+      "self": "Enable Self registration",
+      "ldap": "Enable LDAP",
+      "issuerUrl": "Issuer URL",
+      "clientId": "Client ID",
+      "clientSecret": "Client Secret",
+      "issuerUrlError": "Issuer URL is required",
+      "clientIdError": "Client ID is required",
+      "clientSecretError": "Client Secret is required"
+    },
+
+    "Applications": {
+      "title": "Let's setup your Applications",
+      "description": "Please enter your Applications details",
+      "subheading": "Provide your Application urls",
+      "indryve": "Indryve",
+      "mail": "Indryve Mail",
+      "chat": "Indryve Chat",
+      "video": "Indryve Video",
+      "meet": "Indryve Meet",
+      "url": "Application Url"
+    },
+    "Modal": {
+      "title": "Verification",
+      "description": "Please verify that you are a human",
+      "verify": "Verify",
+      "captchaValue": "Enter Captcha",
+      "create": "Creating Applications"
+    }
+  },
+  "Login": {
+    "LoginForm": {
+      "title": "Administrator Login",
+      "description": "Please enter your login details",
+      "email": "Email Address or Username",
+      "emailError": "Email Address or Username is required",
+      "password": "Password",
+      "passwordError": "Password is required",
+      "captcha": "Enter Captcha",
+      "captchaError": "Captcha is required",
+      "login": "Login",
+      "forgot": "Forgot Password?",
+      "tooltip": "Show utilities",
+
+      "loginSuccessMessage": "Login successful",
+      "loginErrorMessage": "Login failed , please check your credentials or Captcha",
+      "localStorageError": "Failed to access local storage"
+    },
+    "ForgotPassword": {
+      "title": "Forgot Password",
+      "description": "Don't worry, we'll send you an email to reset your password",
+      "email": "Email Address",
+      "emailError": "Email Address is required",
+      "submit": "Send Link",
+      "back": "Cancel",
+      "forgotSuccessMessage": "Password reset link sent successfully",
+      "forgotErrorMessage": "Failed to send password reset link"
+    },
+    "LoginFooter": {
+      "copyright": "© 2025 Indryve. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "support": "Support"
+    }
+  },
+
+  "WorkSpace": {
+    "Header": {
+      "title": "Indryve Workspace"
+    },
+    "Sidebar": {
+      "suite": "Suite Apps",
+      "apps": "My Apps",
+      "dashboard": "Admin Dashboard",
+      "applicationcontrol": "Application Control",
+      "activity": "Activity",
+      "userstore": "User Store",
+      "advanced": "Settings"
+    },
+    "Profile": {
+      "signed": "Signed in as",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "support": "Support",
+      "logout": "Logout"
+    }
+  }
+}
