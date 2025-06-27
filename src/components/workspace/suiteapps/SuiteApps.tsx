@@ -80,7 +80,7 @@ const SuiteApps = () => {
             : fontsize === "md"
             ? "w-[150px]"
             : "w-[180px]"
-        } relative dark:bg-zinc-800 h-auto p-3 gap-2 shadow-sm rounded-2xl  group cursor-pointer  transition-shadow flex flex-col items-center justify-center`}
+        } relative dark:bg-zinc-800 h-auto p-3 gap-2 shadow-md border-t dark:border dark:border-zinc-800 rounded-2xl  group cursor-pointer  transition-shadow flex flex-col items-center justify-center`}
         onClick={() => {
           if (url && url.trim().toLowerCase() !== "null" && url.trim() !== "") {
             window.open(url, "_blank");

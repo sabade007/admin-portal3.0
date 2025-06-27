@@ -77,7 +77,7 @@ const MyApps = () => {
             : fontsize === "md"
             ? "w-[150px]"
             : "w-[180px]"
-        } relative h-auto p-1 gap-2 shadow-sm rounded-2xl group cursor-pointer transition-shadow flex flex-col items-center justify-center`}
+        } relative h-auto dark:bg-zinc-800 p-3 gap-2 border-t dark:border-none h-auto shadow-md rounded-2xl group cursor-pointer transition-shadow flex flex-col items-center justify-center`}
         onClick={() => {
           if (url && url.trim().toLowerCase() !== "null" && url.trim() !== "") {
             window.open(url, "_blank");
@@ -105,7 +105,7 @@ const MyApps = () => {
               </div>
             )}
           </div>
-          <div className="text-center row-span-1">
+          <div className="text-center row-span-1 flex items-center">
             <Paragraph>{name}</Paragraph>
           </div>
         </div>
