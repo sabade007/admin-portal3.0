@@ -218,6 +218,54 @@
       "terms": "Terms of Use",
       "support": "Support",
       "logout": "Logout"
+    },
+    "Search": {
+      "suite": "Search in Suite Apps",
+      "apps": "Search in My Apps",
+      "applicationcontrol": "Search in Application Control",
+      "activity": "Search in Activity",
+      "userstore": "Search in User Store",
+      "search": "Search"
+    },
+
+    "SuiteApps": {
+      "title": "Suite Apps",
+      "sortby": "Sort By",
+      "alphabetical": "Name",
+      "searchResult": "Search results are empty ",
+      "applicationUrlnotfoundtitle": "Application URL not found",
+      "applicationUrlnotfounddesc": "The application URL doesnt seem to exist. Please ask your administrator to edit the application and try again."
+    },
+    "MyApps": {
+      "title": "My Apps",
+      "noApps": "You have no applications yet. Please ask your administrator to create an application to get started.",
+      "searchResult": "Search results are empty",
+      "bookmark": "Bookmarks",
+      "applicationUrlnotfoundtitle": "Application URL not found",
+      "applicationUrlnotfounddesc": "The application URL doesnt seem to exist. Please ask your administrator to edit the application and try again.",
+      "noBookmarks": "No Bookmarks found"
+    }
+  },
+
+  "WorkspaceMobile": {
+    "Navigation": {
+      "suiteapps": "Suite Apps",
+      "myapps": "My Apps",
+      "settings": "Settings"
+    },
+    "Settings": {
+      "signed": "Signed in as",
+      "settings": "Settings",
+      "links": "Links",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "support": "Support",
+      "logout": "Logout"
+    },
+    "Search": {
+      "suite": "Search in Suite Apps",
+      "apps": "Search in My Apps",
+      "search": "Search"
     }
   }
 }

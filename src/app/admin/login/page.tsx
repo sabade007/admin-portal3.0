@@ -24,7 +24,7 @@ const page = () => {
     <div className="w-full h-[100dvh] flex flex-col">
       <div className="h-[calc(100%-80px)] w-full">
         <div className="flex justify-center items-center w-full h-full p-4">
-          <div className="sm:p-4 md:p-4 lg:p-8 xl:p-16 shadow-2xl rounded-xl sm:border dark:border-zinc-800 shadow-iconcolor/10">
+          <div className="sm:p-4 md:p-4 lg:p-8 xl:p-16 shadow-2xl rounded-2xl sm:border dark:border-zinc-800 shadow-iconcolor/30">
             <LoginForm />
           </div>
         </div>

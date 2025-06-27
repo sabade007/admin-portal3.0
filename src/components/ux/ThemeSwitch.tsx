@@ -36,9 +36,10 @@ type ThemeKey =
 
 interface CustomProps {
   isDropdowntype?: boolean;
+  isFullWidth?: boolean;
 }
 
-const ThemeSwitch = ({ isDropdowntype }: CustomProps) => {
+const ThemeSwitch = ({ isDropdowntype, isFullWidth }: CustomProps) => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
   const t = useTranslations("Ux");
@@ -60,9 +61,22 @@ const ThemeSwitch = ({ isDropdowntype }: CustomProps) => {
     <div>
       <Dropdown size="sm">
         <DropdownTrigger>
-          <Button size="sm" isIconOnly={!isDropdowntype}>
-            <Palette className="w-6 h-6" />
-            {isDropdowntype && <span>{t("ThemeSelector.title")}</span>}
+          <Button
+            size="sm"
+            className={`${isFullWidth && "w-full"}`}
+            isIconOnly={!isDropdowntype}
+          >
+            {isFullWidth ? (
+              <div className="flex flex-row items-center w-full gap-2 justify-start text-left">
+                <Palette className="w-5 h-5" />
+                {isDropdowntype && <span>{t("ThemeSelector.title")}</span>}
+              </div>
+            ) : (
+              <div className="flex flex-row items-center gap-2">
+                <Palette className="w-5 h-5" />
+                {isDropdowntype && <span>{t("ThemeSelector.title")}</span>}
+              </div>
+            )}
           </Button>
         </DropdownTrigger>
         <DropdownMenu

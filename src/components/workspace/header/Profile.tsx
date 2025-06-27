@@ -85,11 +85,14 @@ const Profile = () => {
     <Dropdown size="sm" placement="bottom-end">
       <DropdownTrigger>
         <Avatar
-          isBordered
           as="button"
           size="sm"
+          fallback={fullName?.[0] ?? "?"}
           className="transition-transform"
-          src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+          src={displayPicture}
+          classNames={{
+            base: "cursor-pointer bg-default/30 dark:bg-default/50",
+          }}
         />
       </DropdownTrigger>
       <DropdownMenu

@@ -21,10 +21,12 @@ interface LanguageOption {
 
 interface LanguageSwitcherProps {
   isDropdowntype?: boolean;
+  isFullWidth?: boolean;
 }
 
 export default function LanguageSwitcher({
   isDropdowntype,
+  isFullWidth,
 }: LanguageSwitcherProps) {
   const { locale, setLocale } = useLocaleStore();
   const t = useTranslations("Ux");
@@ -41,9 +43,22 @@ export default function LanguageSwitcher({
   return (
     <Dropdown size="lg">
       <DropdownTrigger>
-        <Button size="sm" isIconOnly={!isDropdowntype}>
-          <Globe2 className="w-5 h-5" />
-          {isDropdowntype && <span>{t("LanguageSelector.title")}</span>}
+        <Button
+          size="sm"
+          className={`${isFullWidth && "w-full"}`}
+          isIconOnly={!isDropdowntype}
+        >
+          {isFullWidth ? (
+            <div className="flex flex-row items-center w-full gap-2 justify-start text-left">
+              <Globe2 className="w-5 h-5" />
+              {isDropdowntype && <span>{t("LanguageSelector.title")}</span>}
+            </div>
+          ) : (
+            <>
+              <Globe2 className="w-5 h-5" />
+              {isDropdowntype && <span>{t("LanguageSelector.title")}</span>}
+            </>
+          )}
         </Button>
       </DropdownTrigger>
 

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import d from "@/assets/light/d.png";
+import d from "@/assets/light/dryve.svg";
 import Heading from "../themes/Heading";
 import Paragraph from "../themes/Paragraph";
 import { useTranslations } from "next-intl";
@@ -211,7 +211,7 @@ const LoginForm = () => {
   return (
     <div className=" min-w-[280px] max-h-[90dvh] overflow-y-auto  ">
       <div className="flex flex-col items-center">
-        <img src={d.src} alt="logo" className="w-auto h-8 mb-2" />
+        <img src={d.src} alt="logo" className="w-auto h-14 mb-2" />
       </div>
       {showType === "login" && (
         <div className="flex flex-col gap-2 ">

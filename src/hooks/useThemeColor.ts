@@ -7,7 +7,7 @@ const themeColorMap: Record<string, string> = {
   mint: "#84cc16",
   artic: "#38bdf8",
   rose: "#f43f5e",
-  coral: "#f87171",
+  coral: "#f97316",
   lilac: "#c084fc",
 };
 

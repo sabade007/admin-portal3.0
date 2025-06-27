@@ -8,6 +8,9 @@ type WorkspaceState = {
   currentTab: string;
   setCurrentTab: (key: string) => void;
 
+  currentMobileTab: string;
+  setCurrentMobileTab: (key: string) => void;
+
   orgId: number;
   setOrgId: (key: number) => void;
 
@@ -29,6 +32,9 @@ type WorkspaceState = {
   fullName: string;
   setFullName: (key: string) => void;
 
+  bookMarks: any[];
+  setBookMarks: (bookMarks: any[]) => void;
+
   getUserDetails: () => Promise<any | undefined>;
 
   getAllApplications: (orgId: any) => Promise<any | undefined>;
@@ -36,11 +42,16 @@ type WorkspaceState = {
   initializeWorkspace: () => Promise<void>;
 
   createnewApplication: (body: any, orgId: any) => Promise<any | undefined>;
+
+  getbookmarks: () => Promise<any | undefined>;
 };
 
 const useWorkspaceStore = create<WorkspaceState>((set) => ({
   currentTab: "suite",
   setCurrentTab: (key) => set({ currentTab: key }),
+
+  currentMobileTab: "suitemob",
+  setCurrentMobileTab: (key) => set({ currentMobileTab: key }),
 
   orgId: 0,
   setOrgId: (key) => set({ orgId: key }),
@@ -62,6 +73,9 @@ const useWorkspaceStore = create<WorkspaceState>((set) => ({
 
   fullName: "",
   setFullName: (key) => set({ fullName: key }),
+
+  bookMarks: [],
+  setBookMarks: (bookMarks) => set({ bookMarks }),
 
   getUserDetails: async () => {
     try {
@@ -132,6 +146,30 @@ const useWorkspaceStore = create<WorkspaceState>((set) => ({
     }
   },
 
+  getbookmarks: async () => {
+    try {
+      const response = await axiosInstance.get(
+        env("NEXT_PUBLIC_BACKEND_URL") + "BookMarks/GetAllLinks/1/100"
+      );
+      const data = response.data;
+      const sortedBookmarks = data.content.sort(
+        (a: any, b: any) => b.createdAt - a.createdAt
+      );
+
+      set({
+        bookMarks: sortedBookmarks,
+      });
+
+      return data;
+    } catch (err) {
+      addToast({
+        title: "Cannot get bookmarks details",
+        color: "danger",
+      });
+      return false;
+    }
+  },
+
   initializeWorkspace: async () => {
     try {
       const userDetails = await useWorkspaceStore.getState().getUserDetails();
@@ -170,6 +208,7 @@ const useWorkspaceStore = create<WorkspaceState>((set) => ({
 
         await useWorkspaceStore.getState().getAllApplications(orgId);
       }
+      await useWorkspaceStore.getState().getbookmarks();
     } catch (err: any) {
       addToast({
         title: "Failed to initialize workspace",

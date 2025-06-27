@@ -1,4 +1,8 @@
 "use client";
+import Heading from "@/components/themes/Heading";
+import WorkspaceBottomNavigationMob from "@/components/workspace/mob/WorkspaceBottomNavigationMob";
+import WorkspaceHeaderMob from "@/components/workspace/mob/WorkspaceHeaderMob";
+import WorkspaceMobContent from "@/components/workspace/mob/WorkspaceMobContent";
 import SessionExpiredModal from "@/components/workspace/modals/SessionExpiredModal";
 import WorkspaceContent from "@/components/workspace/WorkspaceContent";
 import WorkspaceEndbar from "@/components/workspace/WorkspaceEndbar";
@@ -55,7 +59,7 @@ const page = () => {
                 </div>
                 <div
                   className="w-[calc(100%-120px)] h-full flex flex-col gap-4] border-t  rounded-t-xl
-          shadow-2xl shadow-iconcolor/20
+          shadow-2xl shadow-iconcolor/20 dark:bg-zinc-900 dark:border-zinc-900 dark:shadow-none
           "
                 >
                   <WorkspaceContent />
@@ -66,7 +70,17 @@ const page = () => {
               </div>
             </div>
 
-            <div className="w-full h-full sm:flex md:flex lg:hidden xl:hidden"></div>
+            <div className="w-full h-[100dvh] sm:flex md:flex lg:hidden xl:hidden flex flex-col">
+              <div className="w-full h-[60px]  sticky top-0">
+                <WorkspaceHeaderMob />
+              </div>
+              <div className="w-full h-[calc(100dvh-120px)] max-h-[calc(100dvh-120px)] overflow-y-auto ">
+                <WorkspaceMobContent />
+              </div>
+              <div className="w-full h-[60px] shadow-2xl border-t dark:border-zinc-800 ">
+                <WorkspaceBottomNavigationMob />
+              </div>
+            </div>
           </div>
           <SessionExpiredModal
             isOpen={warningModalOpen || sessionExpired}

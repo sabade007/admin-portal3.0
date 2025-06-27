@@ -25,10 +25,12 @@ interface FontSizeOption {
 
 interface FontSizeSelectorProps {
   isDropdowntype?: boolean;
+  isFullWidth?: boolean;
 }
 
 export default function FontSizeSelector({
   isDropdowntype,
+  isFullWidth,
 }: FontSizeSelectorProps) {
   const { fontsize, setFontSize } = useFontSizeStore();
   const t = useTranslations("Ux");
@@ -61,9 +63,22 @@ export default function FontSizeSelector({
   return (
     <Dropdown size="lg">
       <DropdownTrigger>
-        <Button size="sm" isIconOnly={!isDropdowntype}>
-          <ALargeSmall className="w-6 h-6" />
-          {isDropdowntype && <span>{t("FontsizeSelector.title")}</span>}
+        <Button
+          size="sm"
+          className={`${isFullWidth && "w-full"}`}
+          isIconOnly={!isDropdowntype}
+        >
+          {isFullWidth ? (
+            <div className="flex flex-row items-center w-full gap-2 justify-start text-left w-full">
+              <TextCursorIcon className="w-5 h-5" />
+              {isDropdowntype && <span>{t("FontsizeSelector.title")}</span>}
+            </div>
+          ) : (
+            <div className="flex items-center gap-2">
+              <TextCursorIcon className="w-5 h-5" />
+              {isDropdowntype && <span>{t("FontsizeSelector.title")}</span>}
+            </div>
+          )}
         </Button>
       </DropdownTrigger>
 
