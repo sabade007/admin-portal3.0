@@ -23,37 +23,37 @@ body {
 /* //////Heading///// */
 
 .largeheading {
-  @apply text-xl font-semibold text-iconcolor tracking-wide;
+  @apply text-[17px] font-semibold text-iconcolor tracking-wide;
 }
 .normalheading {
-  @apply text-lg font-semibold text-iconcolor tracking-wide;
+  @apply text-[15px] font-semibold text-iconcolor tracking-wide;
 }
 .smallheading {
-  @apply text-base font-bold text-iconcolor tracking-wide;
+  @apply text-[13px] font-bold text-iconcolor tracking-wide;
 }
 
 /* //////Subheading///// */
 
 .largesubheading {
-  @apply text-lg font-semibold text-textcolor;
+  @apply text-[16px] font-semibold text-textcolor;
 }
 .normalsubheading {
-  @apply text-base font-semibold text-textcolor;
+  @apply text-[14px] font-semibold text-textcolor;
 }
 .smallsubheading {
-  @apply text-sm font-semibold text-textcolor;
+  @apply text-[12px] font-semibold text-textcolor;
 }
 
 /* //////Paragraph///// */
 
 .largeparagraph {
-  @apply text-base text-textcolor;
+  @apply text-[14px] text-textcolor;
 }
 .normalparagraph {
-  @apply text-sm text-textcolor;
+  @apply text-[12px] text-textcolor;
 }
 .smallparagraph {
-  @apply text-xs text-textcolor;
+  @apply text-[10px] text-textcolor;
 }
 
 /* ///// Tiny///// */

@@ -17,6 +17,7 @@ import useSearchStore from "@/store/workspace/useSearchStore";
 import { EmptyApps, Search } from "@/lib/svg";
 import Tiny from "@/components/themes/Tiny";
 import { addToast } from "@heroui/react";
+import Heading from "@/components/themes/Heading";
 
 const SuiteApps = () => {
   const t = useTranslations("WorkSpace");
@@ -76,11 +77,11 @@ const SuiteApps = () => {
         initial="initial"
         className={`${
           fontsize === "sm"
-            ? "w-[130px]"
+            ? "w-[116px]"
             : fontsize === "md"
             ? "w-[150px]"
             : "w-[180px]"
-        } relative dark:bg-zinc-800 h-auto p-3 gap-2 shadow-md border-t dark:border dark:border-zinc-800 rounded-2xl  group cursor-pointer  transition-shadow flex flex-col items-center justify-center`}
+        } relative dark:bg-zinc-800 h-auto p-2 gap-2 shadow-sm border dark:border dark:border-zinc-800 rounded-2xl  group cursor-pointer  transition-shadow flex flex-col items-center justify-center`}
         onClick={() => {
           if (url && url.trim().toLowerCase() !== "null" && url.trim() !== "") {
             window.open(url, "_blank");
@@ -103,19 +104,19 @@ const SuiteApps = () => {
 
         <div className="row-span-1">
           {name === defaultAppNames[0] && (
-            <img src={dryve.src} alt="Dryve" className="w-12 h-12" />
+            <img src={dryve.src} alt="Dryve" className="w-8 h-8" />
           )}
           {name === defaultAppNames[1] && (
-            <img src={mail.src} alt="Dryve" className="w-12 h-12" />
+            <img src={mail.src} alt="Dryve" className="w-8 h-8" />
           )}
           {name === defaultAppNames[2] && (
-            <img src={converse.src} alt="Dryve" className="w-12 h-12" />
+            <img src={converse.src} alt="Dryve" className="w-8 h-8" />
           )}
           {name === defaultAppNames[3] && (
-            <img src={meet.src} alt="Dryve" className="w-12 h-12" />
+            <img src={meet.src} alt="Dryve" className="w-8 h-8" />
           )}
           {name === defaultAppNames[4] && (
-            <img src={videos.src} alt="Dryve" className="w-12 h-12" />
+            <img src={videos.src} alt="Dryve" className="w-8 h-8" />
           )}
         </div>
 
@@ -129,11 +130,11 @@ const SuiteApps = () => {
 
   return (
     <div className="p-4 w-full max-h-[calc(100dvh-76px)] overflow-y-auto scrollbar-hide">
-      <div className="p-4">
-        <Subheading>{t("SuiteApps.title")}</Subheading>
+      <div className="">
+        <Heading>{t("SuiteApps.title")}</Heading>
       </div>
 
-      <div className="flex flex-wrap gap-4 mt-4">
+      <div className="flex flex-wrap gap-4 mt-2">
         {filteredApps.map((app) => (
           <AppCard
             key={app.applicationId}

@@ -65,7 +65,7 @@ export default function ThemetypeSelector({
     <Dropdown size="lg">
       <DropdownTrigger>
         <Button size="sm" isIconOnly={!isDropdowntype}>
-          <LayoutDashboard className="w-5 h-5" />
+          <LayoutDashboard className="w-4 h-4" />
           {isDropdowntype && <span>{t("ThemetypeSelector.title")}</span>}
         </Button>
       </DropdownTrigger>

@@ -11,6 +11,7 @@ import useSearchStore from "@/store/workspace/useSearchStore";
 import { EmptyApps, Search } from "@/lib/svg";
 import Tiny from "@/components/themes/Tiny";
 import { addToast } from "@heroui/react";
+import Heading from "@/components/themes/Heading";
 
 const MyApps = () => {
   const t = useTranslations("WorkSpace");
@@ -51,16 +52,78 @@ const MyApps = () => {
         )
       : bookMarks;
 
+  // const AppCard = ({
+  //   logo,
+  //   name,
+  //   url,
+  //   themeColor,
+  // }: {
+  //   logo: string;
+  //   name: string;
+  //   url?: string;
+  //   themeColor: string;
+  // }) => {
+  //   const lineVariants = {
+  //     initial: { scaleX: 0, opacity: 0 },
+  //     hover: { scaleX: 0.8, opacity: 1 },
+  //   };
+
+  //   return (
+  //     <motion.div
+  //       whileHover="hover"
+  //       initial="initial"
+  //       className={`${
+  //         fontsize === "sm"
+  //           ? "w-[130px]"
+  //           : fontsize === "md"
+  //           ? "w-[150px]"
+  //           : "w-[180px]"
+  //       } relative h-auto dark:bg-zinc-800 p-3 gap-2 border-t dark:border-none h-auto shadow-md rounded-2xl group cursor-pointer transition-shadow flex flex-col items-center justify-center`}
+  //       onClick={() => {
+  //         if (url && url.trim().toLowerCase() !== "null" && url.trim() !== "") {
+  //           window.open(url, "_blank");
+  //         } else {
+  //           addToast({
+  //             title: t("MyApps.applicationUrlnotfoundtitle"),
+  //             description: t("MyApps.applicationUrlnotfounddesc"),
+  //           });
+  //         }
+  //       }}
+  //     >
+  //       <motion.div
+  //         variants={lineVariants}
+  //         transition={{ duration: 0.3, ease: "easeOut" }}
+  //         className="absolute bottom-0 left-0 w-full h-[3px] origin-center rounded"
+  //         style={{ backgroundColor: themeColor }}
+  //       />
+  //       <div className="grid grid-rows-2 gap-2">
+  //         <div className="row-span-1 flex items-center justify-center">
+  //           {typeof logo === "string" && logo.trim() !== "" ? (
+  //             <img src={logo} alt={name} className="w-8 h-8 object-contain" />
+  //           ) : (
+  //             <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-xs text-gray-500">
+  //               {name[0]}
+  //             </div>
+  //           )}
+  //         </div>
+  //         <div className="text-center row-span-1 flex items-center">
+  //           <Paragraph>{name}</Paragraph>
+  //         </div>
+  //       </div>
+  //     </motion.div>
+  //   );
+  // };
+
   const AppCard = ({
-    logo,
     name,
     url,
     themeColor,
+    logo,
   }: {
-    logo: string;
     name: string;
     url?: string;
     themeColor: string;
+    logo: string;
   }) => {
     const lineVariants = {
       initial: { scaleX: 0, opacity: 0 },
@@ -77,37 +140,38 @@ const MyApps = () => {
             : fontsize === "md"
             ? "w-[150px]"
             : "w-[180px]"
-        } relative h-auto dark:bg-zinc-800 p-3 gap-2 border-t dark:border-none h-auto shadow-md rounded-2xl group cursor-pointer transition-shadow flex flex-col items-center justify-center`}
+        } relative dark:bg-zinc-800 h-auto p-2 gap-2 shadow-sm border dark:border dark:border-zinc-800 rounded-2xl  group cursor-pointer  transition-shadow flex flex-col items-center justify-center`}
         onClick={() => {
           if (url && url.trim().toLowerCase() !== "null" && url.trim() !== "") {
             window.open(url, "_blank");
           } else {
             addToast({
-              title: t("MyApps.applicationUrlnotfoundtitle"),
-              description: t("MyApps.applicationUrlnotfounddesc"),
+              title: t("SuiteApps.applicationUrlnotfoundtitle"),
+              description: t("SuiteApps.applicationUrlnotfounddesc"),
             });
           }
         }}
       >
+        {/* ✅ Animated horizontal line from center */}
         <motion.div
           variants={lineVariants}
           transition={{ duration: 0.3, ease: "easeOut" }}
           className="absolute bottom-0 left-0 w-full h-[3px] origin-center rounded"
           style={{ backgroundColor: themeColor }}
         />
-        <div className="grid grid-rows-2 gap-2">
-          <div className="row-span-1 flex items-center justify-center">
-            {typeof logo === "string" && logo.trim() !== "" ? (
-              <img src={logo} alt={name} className="w-8 h-8 object-contain" />
-            ) : (
-              <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-xs text-gray-500">
-                {name[0]}
-              </div>
-            )}
+        {/* Logo */}
+
+        {typeof logo === "string" && logo.trim() !== "" ? (
+          <img src={logo} alt={name} className="w-8 h-8 object-contain" />
+        ) : (
+          <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-xs text-gray-500">
+            {name[0]}
           </div>
-          <div className="text-center row-span-1 flex items-center">
-            <Paragraph>{name}</Paragraph>
-          </div>
+        )}
+
+        {/* Name */}
+        <div className="text-center row-span-1">
+          <Paragraph> {name}</Paragraph>
         </div>
       </motion.div>
     );
@@ -115,11 +179,11 @@ const MyApps = () => {
 
   return (
     <div className="p-4 w-full max-h-[calc(100dvh-76px)] overflow-y-auto scrollbar-hide">
-      <div className="p-4">
-        <Subheading>{t("MyApps.title")}</Subheading>
+      <div className="">
+        <Heading>{t("MyApps.title")}</Heading>
       </div>
 
-      <div className="flex flex-wrap gap-4 mt-4">
+      <div className="flex flex-wrap gap-4 mt-2 mb-4">
         {filteredApps.map((app) => (
           <AppCard
             key={app.applicationId}
@@ -145,10 +209,10 @@ const MyApps = () => {
         )}
       </div>
       <div>
-        <div className="p-4">
-          <Subheading>{t("MyApps.bookmark")}</Subheading>
+        <div className="">
+          <Heading>{t("MyApps.bookmark")}</Heading>
         </div>
-        <div className="flex flex-wrap gap-4 mt-4">
+        <div className="flex flex-wrap gap-4 mt-2 ">
           {filteredBookmarks.map((app) => (
             <AppCard
               key={app.id}

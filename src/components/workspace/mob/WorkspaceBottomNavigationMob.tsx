@@ -20,7 +20,7 @@ const WorkspaceBottomNavigationMob = () => {
           className="w-full  h-full"
         >
           <div className="flex flex-col items-center">
-            <SquircleDashed className="w-5 h-5" />
+            <SquircleDashed className="w-4 h-4" />
             <Paragraph>{t("Navigation.suiteapps")}</Paragraph>
           </div>
         </Button>
@@ -34,7 +34,7 @@ const WorkspaceBottomNavigationMob = () => {
           className="w-full h-full"
         >
           <div className="flex flex-col items-center">
-            <TriangleDashed className="w-5 h-5" />
+            <TriangleDashed className="w-4 h-4" />
             <Paragraph>{t("Navigation.myapps")}</Paragraph>
           </div>
         </Button>
@@ -48,7 +48,7 @@ const WorkspaceBottomNavigationMob = () => {
           className="w-full  h-full"
         >
           <div className="flex flex-col items-center">
-            <Settings className="w-5 h-5" />
+            <Settings className="w-4 h-4" />
             <Paragraph>{t("Navigation.settings")}</Paragraph>
           </div>
         </Button>

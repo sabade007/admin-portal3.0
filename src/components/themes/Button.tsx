@@ -37,7 +37,7 @@ const Button: React.FC<CustomButtonProps> = ({
     <HeroUiButton
       variant={variant}
       className={`${themeClass} ${className ?? ""}`}
-      size={fontsize}
+      size={fontsize === "sm" ? "sm" : "md"}
       isIconOnly={isIconOnly}
       {...props}
     >

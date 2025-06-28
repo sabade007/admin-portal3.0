@@ -12,8 +12,8 @@ const WorkspaceHeader = () => {
   return (
     <div className="w-full h-[60px] grid grid-cols-4 items-center">
       <div className="ml-4 flex flex-row items-center gap-4 col-span-1">
-        <img src={d.src} alt="" className="h-[24px] w-auto" />
-        <Subheading className="text-lg font-semibold">
+        <img src={d.src} alt="" className="h-[20px] w-auto" />
+        <Subheading className="text-[16px] font-semibold">
           {t("Header.title")}
         </Subheading>
       </div>

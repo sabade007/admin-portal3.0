@@ -71,7 +71,7 @@ const Searchbar = () => {
       value={inputValue}
       className="max-w-sm"
       placeholder={searchPlaceHolder}
-      startContent={<SearchIcon className="w-5 h-5 pointer-events-none" />}
+      startContent={<SearchIcon className="w-4 h-4 pointer-events-none" />}
       onChange={handleChange}
       onClear={() => {
         setInputValue("");

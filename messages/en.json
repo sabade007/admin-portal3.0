@@ -267,5 +267,67 @@
       "apps": "Search in My Apps",
       "search": "Search"
     }
+  },
+
+  "AdminDashboard": {
+    "title": "Admin Dashboard",
+    "server": "Server Statistics",
+    "activeUsers": "Active Users",
+    "totalUsers": "Total Users",
+    "totalSpaceUsed": "Total Space Used",
+    "totalSpaceAllocated": "Total Space Allocated",
+    "serverCapacity": "Server Capacity",
+    "serverUsage": "Server Usage",
+    "availableSpace": "Available Space",
+    "gb": "in GB",
+    "serverUsageMessage": "Server is running smoothly. No issues found."
+  },
+
+  "AdvancedSettings": {
+    "title": "Advanced Settings",
+    "registration": "Registration",
+    "maintenance": "Maintenance",
+    "email": "Email",
+    "ldap": "Ldap",
+    "extensions": "Extensions",
+    "filesize": "Filesize",
+    "oauth": "OAuth",
+    "branding": "Branding"
+  },
+
+  "GeneralSettings": {
+    "title1": "Default allocated space",
+    "desc1": "The default allocated space will be applicable for new users only.",
+    "title2": "Self Registration",
+    "desc2": "Allow self registration of new users. Signup form will be displayed on the login page.",
+    "space": "Space in GB (number only)",
+    "update": "Update",
+    "updateconfirm": "Confirm, Update",
+    "allowed": "Allowed",
+    "notallowed": "Not Allowed",
+    "updateSuccessFull": "Updated Successfully",
+    "allocatedSpaceError": "Allocated space is required it cannot be zero or empty."
+  },
+
+  "Smtp": {
+    "title": "Smtp Settings",
+    "smtpHost": "SMTP Host",
+    "smtpHostError": "SMTP Host is required",
+    "smtpPort": "SMTP Port",
+    "smtpPortError": "SMTP Port is required",
+    "smtpUsername": "SMTP Username",
+    "smtpUsernameError": "SMTP Username is required",
+    "smtpPassword": "SMTP Password",
+    "smtpPasswordError": "SMTP Password is required",
+    "smtpProtocol": "SMTP Protocol",
+    "smtpProtocolError": "SMTP Protocol is required",
+    "test": "Test Connection",
+    "testSuccessMessage": "Connection successful",
+    "testErrorMessage": "Connection failed",
+    "smtpAuth": "Enable SMTP Authentication",
+    "tls": "Enable Start TLS",
+    "update": "Update",
+    "updateSuccess": "Updated successfully",
+    "updateError": "Failed to update"
   }
 }

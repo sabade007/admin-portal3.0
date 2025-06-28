@@ -13,15 +13,15 @@ const Select: React.FC<CustomSelectProps> = ({ className = "", ...props }) => {
 
   const themeClass =
     themeType === "dense"
-      ? "border min-h-10 border-default/10 bg-default/10 dark:border-default/30 dark:bg-default/30 shadow-sm"
+      ? "border min-h-8 border-default/10 bg-default/10 dark:border-default/30 dark:bg-default/30 shadow-sm"
       : themeType === "outlined"
-      ? "min-h-10 border border-zinc-300 dark:border-zinc-800 shadow-sm"
-      : "min-h-10 shadow-sm bg-default/5 dark:bg-default/30";
+      ? "min-h-8 border border-zinc-300 dark:border-zinc-800 shadow-sm"
+      : "min-h-8 shadow-sm bg-default/5 dark:bg-default/30";
 
   return (
     <HeroSelect
       radius="md"
-      size={fontsize}
+      size={fontsize === "sm" ? "sm" : "md"}
       labelPlacement="outside"
       classNames={{
         trigger: `${themeClass}`, // styling the select button

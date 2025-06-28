@@ -75,13 +75,13 @@ const SidebarItem = ({
         }}
       >
         {icon}
-        <Tiny
+        <p
           className={`${
             selected ? "font-semibold" : ""
           } text-center  text-[10px] ml-1`}
         >
           {label}
-        </Tiny>
+        </p>
       </div>
     </motion.div>
   );
@@ -104,37 +104,37 @@ const WorkspaceSidebar = () => {
     {
       key: "suite",
       label: t("Sidebar.suite"),
-      icon: <SquircleDashed className="w-5 h-5" />,
+      icon: <SquircleDashed className="w-4 h-4" />,
     },
     {
       key: "myapps",
       label: t("Sidebar.apps"),
-      icon: <TriangleDashed className="w-5 h-5" />,
+      icon: <TriangleDashed className="w-4 h-4" />,
     },
     {
       key: "dashboard",
       label: t("Sidebar.dashboard"),
-      icon: <LayoutDashboard className="w-5 h-5" />,
+      icon: <LayoutDashboard className="w-4 h-4" />,
     },
     {
       key: "applicationcontrol",
       label: t("Sidebar.applicationcontrol"),
-      icon: <LayoutDashboard className="w-5 h-5" />,
+      icon: <LayoutDashboard className="w-4 h-4" />,
     },
     {
       key: "userstore",
       label: t("Sidebar.userstore"),
-      icon: <UserSearch className="w-5 h-5" />,
+      icon: <UserSearch className="w-4 h-4" />,
     },
     {
       key: "activity",
       label: t("Sidebar.activity"),
-      icon: <History className="w-5 h-5" />,
+      icon: <History className="w-4 h-4" />,
     },
     {
       key: "advanced",
       label: t("Sidebar.advanced"),
-      icon: <Settings className="w-5 h-5" />,
+      icon: <Settings className="w-4 h-4" />,
     },
   ];
 

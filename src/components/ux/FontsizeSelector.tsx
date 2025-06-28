@@ -45,7 +45,7 @@ export default function FontSizeSelector({
     {
       key: "md",
       label: t("FontsizeSelector.medium"),
-      icon: <ALargeSmall className="w-5 h-5 " />,
+      icon: <ALargeSmall className="w-4 h-4 " />,
     },
     {
       key: "lg",
@@ -70,12 +70,12 @@ export default function FontSizeSelector({
         >
           {isFullWidth ? (
             <div className="flex flex-row items-center w-full gap-2 justify-start text-left w-full">
-              <TextCursorIcon className="w-5 h-5" />
+              <TextCursorIcon className="w-4 h-4" />
               {isDropdowntype && <span>{t("FontsizeSelector.title")}</span>}
             </div>
           ) : (
             <div className="flex items-center gap-2">
-              <TextCursorIcon className="w-5 h-5" />
+              <TextCursorIcon className="w-4 h-4" />
               {isDropdowntype && <span>{t("FontsizeSelector.title")}</span>}
             </div>
           )}

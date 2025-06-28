@@ -68,12 +68,12 @@ const ThemeSwitch = ({ isDropdowntype, isFullWidth }: CustomProps) => {
           >
             {isFullWidth ? (
               <div className="flex flex-row items-center w-full gap-2 justify-start text-left">
-                <Palette className="w-5 h-5" />
+                <Palette className="w-4 h-4" />
                 {isDropdowntype && <span>{t("ThemeSelector.title")}</span>}
               </div>
             ) : (
               <div className="flex flex-row items-center gap-2">
-                <Palette className="w-5 h-5" />
+                <Palette className="w-4 h-4" />
                 {isDropdowntype && <span>{t("ThemeSelector.title")}</span>}
               </div>
             )}

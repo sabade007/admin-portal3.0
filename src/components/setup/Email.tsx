@@ -229,9 +229,9 @@ const Email = () => {
               onClick={toggleRepeatVisibility}
             >
               {isRepeatVisible ? (
-                <Eye className=" w-5 h-5  pointer-events-none" />
+                <Eye className=" w-4 h-4  pointer-events-none" />
               ) : (
-                <EyeClosed className=" w-5 h-5  pointer-events-none" />
+                <EyeClosed className=" w-4 h-4  pointer-events-none" />
               )}
             </button>
           }

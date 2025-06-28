@@ -222,7 +222,7 @@ const LoginForm = () => {
             </div>
             <Tooltip content={t("LoginForm.tooltip")}>
               <Button onPress={() => setShowUtility(!showutility)} isIconOnly>
-                <LucideLayoutDashboard className="w-5 h-5" />
+                <LucideLayoutDashboard className="w-4 h-4" />
               </Button>
             </Tooltip>
           </div>
@@ -263,9 +263,9 @@ const LoginForm = () => {
                 onClick={toggleVisibility}
               >
                 {isVisible ? (
-                  <Eye className="w-5 h-5  pointer-events-none" />
+                  <Eye className="w-4 h-4  pointer-events-none" />
                 ) : (
-                  <EyeClosed className="w-5 h-5 pointer-events-none" />
+                  <EyeClosed className="w-4 h-4 pointer-events-none" />
                 )}
               </button>
             }
@@ -321,7 +321,7 @@ const LoginForm = () => {
             </div>
             <Tooltip content={t("LoginForm.tooltip")}>
               <Button onPress={() => setShowUtility(!showutility)} isIconOnly>
-                <LucideLayoutDashboard className="w-5 h-5" />
+                <LucideLayoutDashboard className="w-4 h-4" />
               </Button>
             </Tooltip>
           </div>

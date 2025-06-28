@@ -50,12 +50,12 @@ export default function LanguageSwitcher({
         >
           {isFullWidth ? (
             <div className="flex flex-row items-center w-full gap-2 justify-start text-left">
-              <Globe2 className="w-5 h-5" />
+              <Globe2 className="w-4 h-4" />
               {isDropdowntype && <span>{t("LanguageSelector.title")}</span>}
             </div>
           ) : (
             <>
-              <Globe2 className="w-5 h-5" />
+              <Globe2 className="w-4 h-4" />
               {isDropdowntype && <span>{t("LanguageSelector.title")}</span>}
             </>
           )}
