@@ -2,6 +2,9 @@
 import {
   History,
   LayoutDashboard,
+  LayoutGrid,
+  LayoutPanelTop,
+  LucideLayoutPanelLeft,
   Settings,
   SquircleDashed,
   TriangleDashed,
@@ -102,22 +105,22 @@ const WorkspaceSidebar = () => {
     {
       key: "suite",
       label: t("Sidebar.suite"),
-      icon: <SquircleDashed className="w-4 h-4" />,
+      icon: <LayoutGrid className="w-4 h-4" />,
     },
     {
       key: "myapps",
       label: t("Sidebar.apps"),
-      icon: <TriangleDashed className="w-4 h-4" />,
+      icon: <LayoutGrid className="w-4 h-4" />,
     },
     {
       key: "dashboard",
       label: t("Sidebar.dashboard"),
-      icon: <LayoutDashboard className="w-4 h-4" />,
+      icon: <LucideLayoutPanelLeft className="w-4 h-4" />,
     },
     {
       key: "applicationcontrol",
       label: t("Sidebar.applicationcontrol"),
-      icon: <LayoutDashboard className="w-4 h-4" />,
+      icon: <LayoutPanelTop className="w-4 h-4" />,
     },
     {
       key: "userstore",

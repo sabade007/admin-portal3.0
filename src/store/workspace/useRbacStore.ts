@@ -19,6 +19,9 @@ interface RbacState {
   removeUsersList: any[];
   setRemoveUsersList: (removeUsersList: any) => void;
 
+  allApplications: any[];
+  setAllApplications: (allApplications: any) => void;
+
   getallRoles: (orgId: any) => Promise<any>;
 
   createNewRole: (roleName: any, orgId: any) => Promise<any>;
@@ -30,6 +33,16 @@ interface RbacState {
   addUserstoRoles: (body: any) => Promise<any>;
 
   removeUsersfromRoles: (body: any) => Promise<any>;
+
+  getAllApplications: (orgId: any) => Promise<any>;
+
+  getAllrolesforApplication: (applicationId: any) => Promise<any>;
+
+  createnewApplication: (body: any, orgId: any) => Promise<any>;
+
+  deleteApplications: (applicationIds: any) => Promise<any>;
+
+  editApplications: (body: any) => Promise<any>;
 }
 
 const useRbacStore = create<RbacState>((set) => ({
@@ -47,6 +60,13 @@ const useRbacStore = create<RbacState>((set) => ({
 
   removeUsersList: [],
   setRemoveUsersList: (removeUsersList) => set({ removeUsersList }),
+
+  ////////Applications
+
+  allApplications: [],
+  setAllApplications: (allApplications) => set({ allApplications }),
+
+  /////////////Roles
 
   getallRoles: async (orgId) => {
     try {
@@ -147,6 +167,101 @@ const useRbacStore = create<RbacState>((set) => ({
     try {
       const response = await axiosInstance.post(
         env("NEXT_PUBLIC_BACKEND_URL") + `portal/removeuserfromrole`,
+        body
+      );
+      const data = response.data;
+      return data;
+    } catch (err: any) {
+      console.log(err);
+      addToast({
+        title: err.message,
+        color: "danger",
+      });
+    }
+  },
+
+  //////////////Applications
+
+  getAllApplications: async (orgId) => {
+    try {
+      const response = await axiosInstance.get(
+        env("NEXT_PUBLIC_BACKEND_URL") + `portal/getapplication/${orgId}`
+      );
+      const data = response.data;
+      set({ allApplications: data });
+      return data;
+    } catch (err: any) {
+      console.log(err);
+      addToast({
+        title: err.message,
+        color: "danger",
+      });
+    }
+  },
+
+  getAllrolesforApplication: async (applicationId) => {
+    try {
+      const response = await axiosInstance.post(
+        env("NEXT_PUBLIC_BACKEND_URL") +
+          `portal/getallrolesforapplication/${applicationId}`
+      );
+      const data = response.data;
+      return data;
+    } catch (err: any) {
+      console.log(err);
+      addToast({
+        title: err.message,
+        color: "danger",
+      });
+    }
+  },
+
+  createnewApplication: async (body, orgId) => {
+    try {
+      const response = await axiosInstance.post(
+        env("NEXT_PUBLIC_BACKEND_URL") +
+          `portal/createapplication/${orgId}?isVdiApplication=true`,
+        body
+      );
+      const data = response.data;
+      return data;
+    } catch (err: any) {
+      console.log(err);
+      addToast({
+        title: err.message,
+        color: "danger",
+      });
+    }
+  },
+
+  deleteApplications: async (applicationIds) => {
+    try {
+      const response = await axiosInstance.delete(
+        env("NEXT_PUBLIC_BACKEND_URL") + `portal/deleteapplications`,
+        {
+          params: {
+            applicationIds: applicationIds,
+          },
+          paramsSerializer: (params) => {
+            return qs.stringify(params, { arrayFormat: "repeat" });
+          },
+        }
+      );
+      return response.data;
+    } catch (err: any) {
+      console.log(err);
+      addToast({
+        title: err.message,
+        color: "danger",
+      });
+    }
+  },
+
+  editApplications: async (body) => {
+    try {
+      const response = await axiosInstance.put(
+        env("NEXT_PUBLIC_BACKEND_URL") +
+          `portal/editapplication/${body.applicationId}`,
         body
       );
       const data = response.data;

@@ -17,6 +17,7 @@ import {
   ArrowRightCircle,
   CircleX,
   LayoutGridIcon,
+  LayoutPanelTop,
   PlusCircle,
   Search,
   Trash2,
@@ -150,7 +151,10 @@ const RoleControl = () => {
       <div className="grid grid-cols-12">
         <div className="col-span-4 border dark:border-zinc-800 flex flex-col gap-1 rounded-tl-xl h-full p-2  ">
           <div className="flex items-center gap-4 ">
-            <Subheading>{t("roleName")}</Subheading>
+            <div className="flex items-center gap-2">
+              <LayoutPanelTop className="w-4 h-4" />
+              <Subheading>{t("roleName")}</Subheading>
+            </div>
             <div className="ml-auto flex gap-2">
               <Button size="sm" onPress={() => setAddRole(!addRole)} isIconOnly>
                 {addRole ? (
@@ -171,8 +175,8 @@ const RoleControl = () => {
           </div>
         </div>
         <div className="col-span-8 border dark:border-zinc-800 rounded-tr-xl h-full border-l-0 p-2">
-          <div className="grid grid-cols-4">
-            <div className="col-span-1">
+          <div className="grid grid-cols-2">
+            <div className="col-span-1 flex items-center w-full justify-center">
               <HButton
                 variant="light"
                 className={`${
@@ -188,7 +192,7 @@ const RoleControl = () => {
                 <Subheading>{t("addUsers")}</Subheading>
               </HButton>
             </div>
-            <div className="col-span-1">
+            <div className="col-span-1 flex items-center w-full justify-center">
               <HButton
                 variant="light"
                 className={`${
@@ -202,38 +206,6 @@ const RoleControl = () => {
               >
                 <UserMinus2 className="w-4 h-4" />
                 <Subheading>{t("removeUsers")}</Subheading>
-              </HButton>
-            </div>
-            <div className="col-span-1">
-              <HButton
-                variant="light"
-                className={`${
-                  currentTab === "addApplications"
-                    ? "underline underline-offset-8 dark:underline-offset-8"
-                    : ""
-                }`}
-                size="sm"
-                key={"addApplications"}
-                onPress={() => setCurrentTab("addApplications")}
-              >
-                <LayoutGridIcon className="w-4 h-4" />
-                <Subheading>{t("addApplications")}</Subheading>
-              </HButton>
-            </div>
-            <div className="col-span-1">
-              <HButton
-                variant="light"
-                className={`${
-                  currentTab === "removeApplications"
-                    ? "underline underline-offset-8 dark:underline-offset-8"
-                    : ""
-                }`}
-                size="sm"
-                key={"removeApplications"}
-                onPress={() => setCurrentTab("removeApplications")}
-              >
-                <LayoutGridIcon className="w-4 h-4" />
-                <Subheading>{t("removeApplications")}</Subheading>
               </HButton>
             </div>
           </div>
@@ -264,16 +236,18 @@ const RoleControl = () => {
             </>
           )}
 
-          <Input
-            isClearable={true}
-            radius="full"
-            size="sm"
-            value={roleSearch}
-            onValueChange={setRoleSearch}
-            className="max-w-sm"
-            placeholder={t("searchRoles")}
-            startContent={<Search className="w-4 h-4 pointer-events-none" />}
-          />
+          {allRoles.length > 0 && (
+            <Input
+              isClearable={true}
+              radius="full"
+              size="sm"
+              value={roleSearch}
+              onValueChange={setRoleSearch}
+              className="max-w-sm"
+              placeholder={t("searchRoles")}
+              startContent={<Search className="w-4 h-4 pointer-events-none" />}
+            />
+          )}
 
           <div className="flex flex-col gap-2 mt-2">
             {filteredRoles.map((role) =>
@@ -312,18 +286,13 @@ const RoleControl = () => {
                 selectedRoleName={selectedRoleName}
               />
             )}
-            {/* {currentTab === "addApplications" && selectedRoleId && (
-              <AddApplications
-                selectedRoleId={selectedRoleId}
-                selectedRoleName={selectedRoleName}
-              />
+
+            {!selectedRoleId && (
+              <div className="flex mt-2 flex-col items-center gap-2">
+                <EmptyApps className="w-24 h-24" />
+                <Paragraph>{t("selectRole")}</Paragraph>
+              </div>
             )}
-            {currentTab === "removeApplications" && selectedRoleId && (
-              <RemoveApplications
-                selectedRoleId={selectedRoleId}
-                selectedRoleName={selectedRoleName}
-              />
-            )} */}
           </div>
         </div>
       </div>

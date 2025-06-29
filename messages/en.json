@@ -449,7 +449,7 @@
       "deleteRoleSuccess": "Role deleted successfully",
       "deleteRoleError": "Failed to delete role",
       "searchRoles": "Search Roles",
-      "noRoles": "No roles found",
+      "noRoles": "No roles found. Create a role to get started.",
       "searchEmpty": "No roles found matching search criteria",
 
       "addUsers": "Add Users",
@@ -469,7 +469,48 @@
       "selectAll": "Select All",
       "deselectAll": "Deselect All",
 
-      "nousers": "No users found"
+      "nousers": "No users found",
+      "selectRole": "Select a Role to see users."
+    },
+
+    "ApplicationControl": {
+      "applications": "Applications",
+      "editApplication": "Edit Application",
+      "addRoles": "Add Roles",
+      "removeRoles": "Remove Roles",
+      "searchApplications": "Search Applications",
+      "emptyApps": "No applications found",
+      "searchEmpty": "No applications found matching search criteria",
+
+      "newApplicationName": "Application Name",
+      "newApplicationUrl": "Application URL",
+      "newApplicationLogo": "Application Logo (Optional)",
+      "isEnabled": "Application Enabled",
+
+      "applicationNameError": "Application Name is required",
+      "applicationUrlError": "Application URL is required",
+
+      "applicationCreateSuccess": "Application created successfully",
+      "applicationCreateError": "Failed to create application",
+
+      "createApplicationBtn": "Create",
+      "title": "Create new Application",
+
+      "deleteSuccess": "Application deleted successfully",
+      "deleteError": "Failed to delete application"
+    },
+
+    "EditApplication": {
+      "update": "Update",
+      "appName": "Application Name",
+      "appNameError": "Application Name is required",
+      "appUrl": "Application URL",
+      "appUrlError": "Application URL is required",
+      "appLogo": "Application Logo",
+      "isEnabled": "Application Enabled",
+      "isDisabled": "Application Disabled",
+      "updateSuccess": "Application updated successfully",
+      "updateError": "Failed to update application"
     }
   }
 }
