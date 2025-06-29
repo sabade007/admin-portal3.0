@@ -206,8 +206,8 @@
     "Sidebar": {
       "suite": "Suite Apps",
       "apps": "My Apps",
-      "dashboard": "Admin Dashboard",
-      "applicationcontrol": "Application Control",
+      "dashboard": "Dashboard",
+      "applicationcontrol": "App Control",
       "activity": "Activity",
       "userstore": "User Store",
       "advanced": "Settings"
@@ -329,5 +329,147 @@
     "update": "Update",
     "updateSuccess": "Updated successfully",
     "updateError": "Failed to update"
+  },
+
+  "Extensions": {
+    "title1": "Blocked Extensions",
+    "desc1": "These extensions will be blocked from uploading.",
+    "title2": "Blocked Mime Types",
+    "desc2": "These mime types will be blocked from uploading.",
+    "extension": "Extension Name",
+    "mime": "Mime Type",
+
+    "updateExtensionSuccess": "Extension added to the blocked list successfully",
+    "updateExtensionError": "Failed to update",
+
+    "updateMimeSuccess": "Mime type added to the blocked list successfully",
+    "updateMimeError": "Failed to update",
+
+    "deleteExtensionSuccess": "Extension deleted successfully",
+    "deleteExtensionError": "Failed to delete",
+
+    "deleteMimeSuccess": "Mime type deleted successfully",
+    "deleteMimeError": "Failed to delete",
+
+    "extensionvalueError": "Extension Name is required",
+    "mimevalueError": "Mime Type is required"
+  },
+
+  "Filesize": {
+    "title1": "Maximum Upload Size",
+    "desc1": "The maximum upload size will be applicable for new users only.",
+    "title2": "Maximum File Upload Count",
+    "desc2": "The maximum file upload count will be applicable for new users only.",
+    "update": "Update",
+    "confirm": "Confirm, Update",
+    "updateSuccess": "Updated successfully",
+    "updateError": "Failed to update",
+    "size": "Size in MB (number only)",
+    "count": "Count (number only)",
+    "filesizeError": "Filesize is required it cannot be zero or empty.",
+    "filecountError": "Filecount is required it cannot be zero or empty."
+  },
+
+  "OAuth": {
+    "title": "OAuth Settings",
+    "desc": "Coming Soon!!",
+    "clientid": "Client ID",
+    "clientidError": "Client ID is required",
+    "clientsecret": "Client Secret",
+    "clientsecretError": "Client Secret is required",
+    "issuerurl": "Issuer URL",
+    "issuerurlError": "Issuer URL is required",
+    "update": "Update",
+    "confirm": "Confirm, Update",
+    "updateSuccess": "Updated successfully",
+    "updateError": "Failed to update"
+  },
+
+  "Branding": {
+    "title": "Branding Settings",
+    "desc": "Coming Soon!!",
+    "update": "Update",
+    "confirm": "Confirm, Update",
+    "updateSuccess": "Updated successfully",
+    "updateError": "Failed to update",
+    "logo": "Logo",
+    "logoError": "Logo is required",
+    "favicon": "Favicon",
+    "faviconError": "Favicon is required",
+    "tagline": "Tagline",
+    "taglineError": "Tagline is required"
+  },
+  "Maintenance": {
+    "title1": "Create a new Maintainence Schedule",
+    "title2": "Current Maintainence Schedule",
+    "desc1": "creating a new Maintainence Schedule erases all existing schedules",
+    "desc2": "Current Maintainence Schedule",
+    "start": "Start",
+    "end": "End",
+    "timeRange": "Time Range",
+    "startDate": "Start Date",
+    "endDate": "End Date",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "addSchedule": "Confirm, Add Schedule",
+    "addScheduleSuccess": "Schedule added successfully",
+    "addScheduleError": "Failed to add schedule",
+    "deleteScheduleSuccess": "Schedule deleted successfully",
+    "deleteScheduleError": "Failed to delete schedule",
+    "descriptionPlaceholder": "Enter your description",
+    "notes": "Notes",
+    "reason": "Reason",
+    "update": "Update",
+    "updateSuccess": "Updated successfully",
+    "updateError": "Failed to update",
+    "successMessage": "Maintenance schedule updated successfully",
+    "descRequired": "Description is required",
+    "reasonRequired": "Reason is required",
+    "startRequired": "Start Date is required",
+    "endRequired": "End Date is required",
+    "startTimeRequired": "Start Time is required",
+    "endTimeRequired": "End Time is required",
+    "description": "Maintenance description",
+    "remove": "Remove"
+  },
+  "AppControl": {
+    "title": "App Control",
+    "title1": "Role based access control",
+    "title2": "Applications",
+
+    "Rbac": {
+      "title": "Role based access control",
+      "desc": "Enable role based access control",
+      "roleName": "Role Name",
+      "roleNamePlaceholder": "Enter role name",
+
+      "createNewRoleSuccess": "Role created successfully",
+      "createNewRoleError": "Failed to create role",
+
+      "deleteRoleSuccess": "Role deleted successfully",
+      "deleteRoleError": "Failed to delete role",
+      "searchRoles": "Search Roles",
+      "noRoles": "No roles found",
+      "searchEmpty": "No roles found matching search criteria",
+
+      "addUsers": "Add Users",
+      "removeUsers": "Remove Users",
+      "addApplications": "Add Apps",
+      "removeApplications": "Remove Apps",
+      "addUsersSuccess": "Users added successfully",
+      "addUsersError": "Failed to add users",
+      "removeUsersSuccess": "Users removed successfully",
+      "removeUsersError": "Failed to remove users",
+      "addApplicationsSuccess": "Applications added successfully",
+      "addApplicationsError": "Failed to add applications",
+      "removeApplicationsSuccess": "Applications removed successfully",
+      "removeApplicationsError": "Failed to remove applications",
+
+      "searchUsers": "Search Users",
+      "selectAll": "Select All",
+      "deselectAll": "Deselect All",
+
+      "nousers": "No users found"
+    }
   }
 }

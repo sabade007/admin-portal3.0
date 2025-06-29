@@ -49,9 +49,7 @@ const SidebarItem = ({
       initial="initial"
       animate={selected ? "selected" : "initial"}
       onClick={onClick}
-      className={`relative w-full   rounded-xl  flex flex-col items-center justify-center gap-1 cursor-pointer ${
-        selected ? "bg-transparent" : ""
-      }`}
+      className={`relative w-full  bg-background shadow-sm mb-1 border rounded-xl dark:border dark:border-zinc-800  flex flex-col items-center justify-center gap-1 cursor-pointer `}
     >
       {/* Left vertical line */}
       <motion.div
@@ -63,12 +61,12 @@ const SidebarItem = ({
           left: 0,
           top: "50%",
           transform: "translateY(-50%)",
-          width: "4px",
-          borderRadius: "1px",
+          width: "3px",
+          borderRadius: "2px",
         }}
       />
       <div
-        className="flex flex-col items-center py-2  justify-center gap-1 w-full h-full rounded-md"
+        className="flex   flex-col items-center py-2  justify-center gap-1 w-full h-full rounded-md"
         style={{
           backgroundColor: backgroundColor,
           color: textColor,
@@ -141,7 +139,7 @@ const WorkspaceSidebar = () => {
   const visibleItems = userRole === "ADMIN" ? allItems : allItems.slice(0, 2);
 
   return (
-    <div className="flex flex-col max-h-[calc(100dvh-60px)] overflow-y-auto scrollbar-hide  gap-1">
+    <div className="flex flex-col max-h-[calc(100dvh-60px)] overflow-y-auto scrollbar-hide ml-1 gap-2">
       {/* {items.map((item) => (
         <SidebarItem
           key={item.key}

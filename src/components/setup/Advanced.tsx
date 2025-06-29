@@ -5,11 +5,12 @@ import Input from "../themes/Input";
 import ThemetypeSelector from "../ux/ThemetypeSelector";
 import { useTranslations } from "next-intl";
 import Select from "../themes/Select";
-import { addToast, Divider, SelectItem, Switch } from "@heroui/react";
+import { addToast, Divider, SelectItem } from "@heroui/react";
 import Paragraph from "../themes/Paragraph";
 import Subheading from "../themes/SubHeading";
 import { Edit } from "lucide-react";
 import { encryptPassword } from "@/hooks/passwordEncryption";
+import Switch from "../themes/Switch";
 
 const Advanced = () => {
   const {
@@ -35,26 +36,6 @@ const Advanced = () => {
     setIssuerClientSecretError,
     submitLoading,
     setSubmitLoading,
-
-    adminPassword,
-    adminName,
-    contactName,
-    adminEmail,
-    contactPhone,
-    organizationType,
-    organizationName,
-    organizationIndustry,
-    organizationSize,
-    contactWebsite,
-    contactCountry,
-    smtpProtocol,
-    smtpHost,
-    smtpPort,
-    smtpEnableSmtpAuth,
-    smtpEnableStartTls,
-    smtpUsername,
-    smtpPassword,
-    submitSetupWizard,
 
     currentTab,
     setCurrentTab,
@@ -87,87 +68,6 @@ const Advanced = () => {
     }
     setDisabledKeys([]);
     setCurrentTab("apps");
-
-    // const encryptedPassword = encryptPassword(adminPassword);
-    // let selectedValue = "";
-
-    // switch (true) {
-    //   case selfRegistrationEnabled && enableLdap:
-    //     selectedValue = "ALL";
-    //     break;
-    //   case selfRegistrationEnabled && !enableLdap:
-    //     selectedValue = "ONLY_DB";
-    //     break;
-    //   case !selfRegistrationEnabled && enableLdap:
-    //     selectedValue = "ONLY_LDAP";
-    //     break;
-    //   default:
-    //     selectedValue = "ONLY_DB";
-
-    //     break;
-    // }
-
-    // const data = {
-    //   userName: adminName,
-    //   fullName: contactName,
-    //   email: adminEmail,
-    //   password: encryptedPassword,
-    //   phone: contactPhone,
-    //   organizationalType: organizationType,
-    //   organizationalName: organizationName,
-    //   industry: organizationIndustry,
-    //   size: organizationSize,
-    //   website: contactWebsite,
-    //   country: contactCountry,
-    //   authenticationFlow: selectedValue,
-    //   emailConfig: {
-    //     orgID: "",
-    //     springMailProtocol: smtpProtocol,
-    //     springMailHost: smtpHost,
-    //     springMailPort: smtpPort,
-    //     springMailPropertiesMailSmtpStarttlsEnable: String(smtpEnableStartTls),
-    //     springMailPropertiesMailSmtpAuth: String(smtpEnableSmtpAuth),
-    //     springMailUsername: smtpUsername,
-    //     springMailPassword: smtpPassword,
-    //   },
-    // };
-    // setSubmitLoading(true);
-    // try {
-    //   const response = await submitSetupWizard(data);
-    //   if (response.responseCode === 200) {
-    //     addToast({
-    //       title: response.message,
-    //       color: "success",
-    //     });
-    //     setDisabledKeys([
-    //       "organization",
-    //       "contact",
-    //       "admin",
-    //       "smtp",
-    //       "advanced",
-    //     ]);
-    //     setCurrentTab("apps");
-    //   } else {
-    //     if (response.message === undefined) {
-    //     } else {
-    //       addToast({
-    //         title: response.message,
-    //         color: "danger",
-    //       });
-    //     }
-
-    //     return;
-    //   }
-    // } catch (error: any) {
-    //   addToast({
-    //     title: error.message,
-    //     color: "danger",
-    //   });
-
-    //   console.log(error);
-    // } finally {
-    //   setSubmitLoading(false);
-    // }
   };
 
   return (
@@ -179,37 +79,20 @@ const Advanced = () => {
         </div>
 
         <Switch
-          isDisabled={submitLoading}
-          color="success"
-          classNames={{
-            base: "data-[selected=true]:border-primary",
-            wrapper:
-              "bg-switchbackground border-inputborder data-[selected=true]:bg-black ",
-          }}
-          size="sm"
           isSelected={selfRegistrationEnabled}
           onValueChange={(e) => {
             setSelfRegistrationEnabled(e);
           }}
-        >
-          <Paragraph>{t("Advanced.self")}</Paragraph>
-        </Switch>
+          label={<Subheading>{t("Advanced.self")}</Subheading>}
+        />
+
         <Switch
-          isDisabled={submitLoading}
-          color="success"
-          classNames={{
-            base: "data-[selected=true]:border-primary",
-            wrapper:
-              "bg-switchbackground border-inputborder data-[selected=true]:bg-black ",
-          }}
-          size="sm"
           isSelected={enableLdap}
           onValueChange={(e) => {
             setEnableLdap(e);
           }}
-        >
-          <Paragraph>{t("Advanced.ldap")}</Paragraph>
-        </Switch>
+          label={<Subheading>{t("Advanced.ldap")}</Subheading>}
+        />
 
         <div>
           <div className="flex gap-2 items-center">

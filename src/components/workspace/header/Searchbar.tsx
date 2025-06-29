@@ -31,8 +31,8 @@ const Searchbar = () => {
         setDisabled(true);
         break;
       case "applicationcontrol":
-        setSearchPlaceHolder(t("Search.applicationcontrol"));
-        setDisabled(false);
+        setSearchPlaceHolder(t("Search.search"));
+        setDisabled(true);
         break;
       case "activity":
         setSearchPlaceHolder(t("Search.activity"));

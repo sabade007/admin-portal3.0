@@ -6,6 +6,11 @@ import React from "react";
 import GeneralSettings from "./GeneralSettings";
 import Subheading from "@/components/themes/SubHeading";
 import SmtpSettings from "./SmtpSettings";
+import Extensions from "./Extensions";
+import FileSize from "./FileSize";
+import Oauth from "./Oauth";
+import Branding from "./Branding";
+import MaintenanceSettings from "./MaintenanceSettings";
 
 const AdvancedSettings = () => {
   const t = useTranslations("AdvancedSettings");
@@ -19,6 +24,7 @@ const AdvancedSettings = () => {
         <Tabs
           aria-label="Options"
           variant="underlined"
+          className="w-full"
           classNames={{
             tabContent: "group-data-[selected=true]:text-iconcolor ",
             tabList:
@@ -35,7 +41,7 @@ const AdvancedSettings = () => {
             key="maintenance"
             title={<Subheading>{t("maintenance")}</Subheading>}
           >
-            {/* <MaintenanceSettings /> */}
+            <MaintenanceSettings />
           </Tab>
           <Tab key="smtp" title={<Subheading>{t("email")}</Subheading>}>
             <SmtpSettings />
@@ -47,16 +53,16 @@ const AdvancedSettings = () => {
             key="extensions"
             title={<Subheading>{t("extensions")}</Subheading>}
           >
-            {/* <Extensions /> */}
+            <Extensions />
           </Tab>
           <Tab key="file" title={<Subheading>{t("filesize")}</Subheading>}>
-            {/* <FilesizeLimit /> */}
+            <FileSize />
           </Tab>
           <Tab key="oauth" title={<Subheading>{t("oauth")}</Subheading>}>
-            {/* <FilesizeLimit /> */}
+            <Oauth />
           </Tab>
           <Tab key="brand" title={<Subheading>{t("branding")}</Subheading>}>
-            {/* <FilesizeLimit /> */}
+            <Branding />
           </Tab>
         </Tabs>
       </div>

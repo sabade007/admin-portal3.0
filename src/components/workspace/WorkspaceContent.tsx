@@ -4,6 +4,7 @@ import SuiteApps from "./suiteapps/SuiteApps";
 import MyApps from "./myapps/MyApps";
 import AdminDashboard from "./admindashboard/AdminDashboard";
 import AdvancedSettings from "./settings/AdvancedSettings";
+import AppControl from "./appcontrol/AppControl";
 
 const WorkspaceContent = () => {
   const { currentTab } = useWorkspaceStore();
@@ -13,7 +14,7 @@ const WorkspaceContent = () => {
       {currentTab === "suite" && <SuiteApps />}
       {currentTab === "myapps" && <MyApps />}
       {currentTab === "dashboard" && <AdminDashboard />}
-      {currentTab === "applicationcontrol" && <div>ApplicationControl</div>}
+      {currentTab === "applicationcontrol" && <AppControl />}
       {currentTab === "activity" && <div>Activity</div>}
       {currentTab === "userstore" && <div>UserStore</div>}
       {currentTab === "advanced" && <AdvancedSettings />}

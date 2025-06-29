@@ -25,7 +25,7 @@ const AdminDashboard = () => {
   }, []);
 
   return (
-    <div className="p-4">
+    <div className="p-4 w-full max-h-[calc(100dvh-76px)] overflow-y-auto scrollbar-hide">
       <div className="p-2">
         <Heading>{t("title")}</Heading>
       </div>

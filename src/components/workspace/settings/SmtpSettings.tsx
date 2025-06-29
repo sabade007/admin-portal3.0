@@ -4,12 +4,13 @@ import Paragraph from "@/components/themes/Paragraph";
 import Select from "@/components/themes/Select";
 import Subheading from "@/components/themes/SubHeading";
 import useSmtpStore from "@/store/workspace/useSmtpStore";
-import { addToast, Divider, SelectItem, Switch } from "@heroui/react";
+import { addToast, Divider, SelectItem } from "@heroui/react";
 import { Eye, EyeClosed } from "lucide-react";
 import { useTranslations } from "next-intl";
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useShakeOnMount } from "@/hooks/useShakeAnimation";
+import Switch from "@/components/themes/Switch";
 
 const SmtpSettings = () => {
   const [isVisible, setIsVisible] = React.useState(false);
@@ -181,7 +182,7 @@ const SmtpSettings = () => {
   };
 
   return (
-    <div>
+    <div className="max-h-[calc(100dvh-220px)] overflow-y-auto scrollbar-hide">
       <div className="flex  gap-4 ">
         <Input
           isDisabled={smtpLoading}
@@ -285,40 +286,22 @@ const SmtpSettings = () => {
       </div>
       <div className="mt-4 flex gap-4 w-full">
         <Switch
-          isDisabled={smtpLoading}
-          color="success"
-          classNames={{
-            base: "data-[selected=true]:border-primary",
-            wrapper:
-              "bg-switchbackground border-inputborder data-[selected=true]:bg-black ",
-          }}
-          size="sm"
           isSelected={smtpEnableSmtpAuth}
           onValueChange={(e) => {
             setSmtpEnableSmtpAuth(e);
             setConfirmButton(false);
           }}
-        >
-          <Paragraph>{t("smtpAuth")}</Paragraph>
-        </Switch>
+          label={<Subheading>{t("smtpAuth")}</Subheading>}
+        />
 
         <Switch
-          isDisabled={smtpLoading}
-          color="success"
-          classNames={{
-            base: "data-[selected=true]:border-primary",
-            wrapper:
-              "bg-switchbackground border-inputborder data-[selected=true]:bg-black ",
-          }}
-          size="sm"
           isSelected={smtpEnableStartTls}
           onValueChange={(e) => {
             setSmtpEnableStartTls(e);
             setConfirmButton(false);
           }}
-        >
-          <Paragraph>{t("tls")}</Paragraph>
-        </Switch>
+          label={<Subheading>{t("tls")}</Subheading>}
+        />
       </div>
 
       <div className="mt-4">

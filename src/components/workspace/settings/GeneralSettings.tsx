@@ -3,12 +3,14 @@ import Input from "@/components/themes/Input";
 import Paragraph from "@/components/themes/Paragraph";
 import Subheading from "@/components/themes/SubHeading";
 import useRegistrationStore from "@/store/workspace/useRegistrationStore";
-import { addToast, Switch } from "@heroui/react";
+import { addToast } from "@heroui/react";
 import { ArrowRightCircle } from "lucide-react";
 import { useTranslations } from "next-intl";
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useShakeOnMount } from "@/hooks/useShakeAnimation";
+import { cn } from "@/lib/utils";
+import Switch from "@/components/themes/Switch";
 
 const GeneralSettings = () => {
   const t = useTranslations("GeneralSettings");
@@ -100,23 +102,14 @@ const GeneralSettings = () => {
         </div>
         <div className="flex flex-row items-end mt-2 gap-4">
           <Switch
-            //   isDisabled={submitLoading}
-            color="success"
-            classNames={{
-              base: "data-[selected=true]:border-primary",
-              wrapper:
-                "bg-switchbackground border-inputborder data-[selected=true]:bg-black ",
-            }}
-            size="sm"
             isSelected={selfRegistration}
-            onValueChange={(e) => {
-              setSelfRegistration(e);
-            }}
-          >
-            <Paragraph>
-              {selfRegistration ? t("allowed") : t("notallowed")}
-            </Paragraph>
-          </Switch>
+            onValueChange={setSelfRegistration}
+            label={
+              <Subheading>
+                {selfRegistration ? t("allowed") : t("notallowed")}
+              </Subheading>
+            }
+          />
         </div>
       </div>
 
