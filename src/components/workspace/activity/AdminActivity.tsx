@@ -1,5 +1,5 @@
 import useActivityStore from "@/store/workspace/useActivityStore";
-import React, { useEffect } from "react";
+import React, { use, useEffect } from "react";
 import {
   now,
   getLocalTimeZone,
@@ -11,6 +11,8 @@ import Input from "@/components/themes/Input";
 import Subheading from "@/components/themes/SubHeading";
 import Paragraph from "@/components/themes/Paragraph";
 import Button from "@/components/themes/Button";
+import { useTranslations } from "next-intl";
+import { NoActivitySvg } from "@/lib/svg";
 
 type Activity = {
   fullName?: string;
@@ -31,6 +33,8 @@ const AdminActivity = () => {
   const [toDate, setToDate] = React.useState<ZonedDateTime | null>(today);
   const [filtervalue, setFilterValue] = React.useState("");
   const [isSearched, setIsSearched] = React.useState(false);
+
+  const t = useTranslations("Activity.AdminActivity");
 
   useEffect(() => {
     fetchData();
@@ -151,7 +155,7 @@ const AdminActivity = () => {
           classNames={{ inputWrapper: "border-inputborder" }}
           hideTimeZone
           showMonthAndYearPickers
-          label="From Date & Time"
+          label={t("fromdate")}
           variant="bordered"
           value={fromDate}
           onChange={setFromDate}
@@ -164,7 +168,7 @@ const AdminActivity = () => {
           classNames={{ inputWrapper: "border-inputborder" }}
           hideTimeZone
           showMonthAndYearPickers
-          label="To Date & Time"
+          label={t("todate")}
           variant="bordered"
           value={toDate}
           onChange={setToDate}
@@ -176,7 +180,7 @@ const AdminActivity = () => {
           isClearable={true}
           radius="full"
           size="sm"
-          label="Search"
+          label={t("search")}
           value={filtervalue}
           className="max-w-sm h-full"
           startContent={<SearchIcon className="w-4 h-4 pointer-events-none" />}
@@ -192,10 +196,11 @@ const AdminActivity = () => {
       </div>
 
       <div className="max-h-[calc(100vh-266px)] overflow-y-auto scrollbar-hide mt-4">
-        {activities.length === 0 && isSearched ? (
-          <Paragraph className="text-center text-gray-400 mt-10">
-            No activity found.
-          </Paragraph>
+        {activities.length === 0 ? (
+          <div className="flex mt-2 flex-col items-center gap-2 mt-4">
+            <NoActivitySvg className="w-24 h-24" />
+            <Paragraph>{t("noActivityFound")}</Paragraph>
+          </div>
         ) : (
           <div className="grid grid-cols-1 gap-2">
             {activities.map((activity, index) => (
@@ -211,26 +216,26 @@ const AdminActivity = () => {
         )}
       </div>
 
-      <div className="w-full flex flex-row items-center justify-between p-2 mb-2">
-        <div className="flex flex-row items-center">
-          <label htmlFor="pageSize" className="mr-2 text-sm font-medium">
-            <Paragraph>Items per page:</Paragraph>
-          </label>
-          <select
-            id="pageSize"
-            value={pageSize}
-            onChange={(e) => setPageSize(Number(e.target.value))}
-            className="border border-gray-300 p-1 cursor-pointer rounded-xl text-sm"
-          >
-            {[5, 10, 20, 50, 100].map((size) => (
-              <option key={size} value={size}>
-                {size}
-              </option>
-            ))}
-          </select>
-        </div>
+      {activities.length > 0 && (
+        <div className="w-full flex flex-row items-center justify-between p-2 mb-2">
+          <div className="flex flex-row items-center">
+            <label htmlFor="pageSize">
+              <Paragraph>{t("itemsPerPage")}</Paragraph>
+            </label>
+            <select
+              id="pageSize"
+              value={pageSize}
+              onChange={(e) => setPageSize(Number(e.target.value))}
+              className=" p-1 cursor-pointer rounded-xl text-sm"
+            >
+              {[5, 10, 20, 50, 100].map((size) => (
+                <option key={size} value={size}>
+                  {size}
+                </option>
+              ))}
+            </select>
+          </div>
 
-        {activities.length > 0 && (
           <Pagination
             size="sm"
             variant="light"
@@ -240,8 +245,8 @@ const AdminActivity = () => {
             total={totalPages}
             onChange={(newPage) => setPageNo(newPage)}
           />
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };

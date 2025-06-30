@@ -13,6 +13,7 @@ import Subheading from "@/components/themes/SubHeading";
 import Paragraph from "@/components/themes/Paragraph";
 import Button from "@/components/themes/Button";
 import { useTranslations } from "next-intl";
+import { NoActivitySvg } from "@/lib/svg";
 
 type Activity = {
   fullName?: string;
@@ -206,9 +207,10 @@ const UserActivity = () => {
 
       <div className="max-h-[calc(100vh-266px)] overflow-y-auto scrollbar-hide mt-4">
         {activities.length === 0 && isSearched ? (
-          <Paragraph className="text-center text-gray-400 mt-10">
-            {t("noActivityFound")}
-          </Paragraph>
+          <div className="flex mt-2 flex-col items-center gap-2 mt-4">
+            <NoActivitySvg className="w-24 h-24" />
+            <Paragraph>{t("noActivityFound")}</Paragraph>
+          </div>
         ) : (
           <div className="grid grid-cols-1 gap-2">
             {activities.map((activity, index) => (
@@ -224,26 +226,26 @@ const UserActivity = () => {
         )}
       </div>
 
-      <div className="w-full flex flex-row items-center justify-between p-2 mb-2">
-        <div className="flex flex-row items-center">
-          <label htmlFor="pageSize" className="mr-2 text-sm font-medium">
-            <Paragraph>{t("itemsPerPage")}</Paragraph>
-          </label>
-          <select
-            id="pageSize"
-            value={pageSize}
-            onChange={(e) => setPageSize(Number(e.target.value))}
-            className="border border-gray-300 p-1 cursor-pointer rounded-xl text-sm"
-          >
-            {[5, 10, 20, 50, 100].map((size) => (
-              <option key={size} value={size}>
-                {size}
-              </option>
-            ))}
-          </select>
-        </div>
+      {activities.length > 0 && (
+        <div className="w-full flex flex-row items-center justify-between p-2 mb-2">
+          <div className="flex flex-row items-center">
+            <label htmlFor="pageSize">
+              <Paragraph>{t("itemsPerPage")}</Paragraph>
+            </label>
+            <select
+              id="pageSize"
+              value={pageSize}
+              onChange={(e) => setPageSize(Number(e.target.value))}
+              className=" p-1 cursor-pointer rounded-xl text-sm"
+            >
+              {[5, 10, 20, 50, 100].map((size) => (
+                <option key={size} value={size}>
+                  {size}
+                </option>
+              ))}
+            </select>
+          </div>
 
-        {activities.length > 0 && (
           <Pagination
             size="sm"
             variant="light"
@@ -253,8 +255,8 @@ const UserActivity = () => {
             total={totalPages}
             onChange={(newPage) => setPageNo(newPage)}
           />
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };

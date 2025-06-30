@@ -43,6 +43,7 @@
       "outlined": "Outlined"
     }
   },
+
   "Setup": {
     "title": "Setup Wizard",
     "welcome": "Welcome to Indryve",
@@ -229,7 +230,7 @@
     },
 
     "SuiteApps": {
-      "title": "Suite Apps",
+      "title": "Suite Applications",
       "sortby": "Sort By",
       "alphabetical": "Name",
       "searchResult": "Search results are empty ",
@@ -237,10 +238,10 @@
       "applicationUrlnotfounddesc": "The application URL doesnt seem to exist. Please ask your administrator to edit the application and try again."
     },
     "MyApps": {
-      "title": "My Apps",
+      "title": "My Applications",
       "noApps": "You have no applications yet. Please ask your administrator to create an application to get started.",
       "searchResult": "Search results are empty",
-      "bookmark": "Bookmarks",
+      "bookmark": "My Bookmarks",
       "applicationUrlnotfoundtitle": "Application URL not found",
       "applicationUrlnotfounddesc": "The application URL doesnt seem to exist. Please ask your administrator to edit the application and try again.",
       "noBookmarks": "No Bookmarks found"
@@ -553,7 +554,8 @@
       "fromdateError": "From Date is required",
       "todateError": "To Date is required",
       "searchError": "Search value is required",
-      "itemsPerPage": "Items per page"
+      "itemsPerPage": "Items per page",
+      "noActivityFound": "No activity found."
     },
     "UserActivity": {
       "fromDateLabel": "From Date & Time",
@@ -561,6 +563,42 @@
       "search": "Search",
       "noActivityFound": "No activity found.",
       "itemsPerPage": "Items per page"
+    }
+  },
+  "UserStore": {
+    "title1": "IAM Users",
+    "title2": "Registered Users",
+    "title3": "Admin Added Users",
+    "title4": "Blocked Users",
+
+    "Iam": {
+      "userslist": "Users List",
+      "userDetails": "User Details",
+      "noUsers": "No users found",
+      "searchUsers": "Search Users",
+      "searchEmpty": "No users found matching search criteria",
+      "block": "Block",
+      "unblock": "Unblock",
+      "update": "Update",
+      "itemsPerPage": "Items per page",
+      "selectUserPrompt": "Select an User to see details",
+      "username": "Username",
+      "emailVerified": "Email Verified:",
+      "yes": "Yes",
+      "no": "No",
+      "none": "N/A",
+      "mobile": "Mobile Number",
+      "createdDate": "Created Date",
+      "blocked": "Blocked",
+      "userRole": "User Role",
+      "storageLabel": "Storage",
+      "storage": "Storage Used",
+      "storageUpdated": "Storage Updated",
+      "storageUpdatedError": "Failed to update storage",
+      "userBlocked": "User blocked successfully",
+      "userUnblocked": "User unblocked successfully",
+      "failedtoblock": "Failed to block user",
+      "nousers": "No users found"
     }
   }
 }

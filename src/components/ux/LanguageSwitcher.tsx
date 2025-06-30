@@ -32,7 +32,10 @@ export default function LanguageSwitcher({
   const t = useTranslations("Ux");
   const { themeType } = useThemetypeStore();
 
-  const languages: LanguageOption[] = [{ key: "en", label: "English" }];
+  const languages: LanguageOption[] = [
+    { key: "en", label: "English" },
+    { key: "sn", label: "ಕನ್ನಡ" },
+  ];
 
   const handleChange = (key: string | number) => {
     const selectedLocale = key as string;

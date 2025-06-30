@@ -12,6 +12,7 @@ import Oauth from "./Oauth";
 import Branding from "./Branding";
 import MaintenanceSettings from "./MaintenanceSettings";
 import { getCookie, setCookie } from "cookies-next";
+import { Settings } from "lucide-react";
 
 const AdvancedSettings = () => {
   const t = useTranslations("AdvancedSettings");
@@ -30,11 +31,15 @@ const AdvancedSettings = () => {
   };
 
   return (
-    <div className="">
-      <div className="p-4">
-        <Heading> {t("title")}</Heading>
+    <div className="p-4">
+      <div className="flex flex-wrap">
+        <div className="border p-2 rounded-xl flex gap-2 items-center">
+          <Settings className="w-4 h-4" />
+          <Subheading>{t("title")}</Subheading>
+        </div>
       </div>
-      <div className="p-4 pt-0">
+
+      <div className=" mt-4">
         <Tabs
           aria-label="Options"
           variant="underlined"

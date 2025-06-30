@@ -4,6 +4,7 @@ import Paragraph from "@/components/themes/Paragraph";
 import Subheading from "@/components/themes/SubHeading";
 import useDashboardStore from "@/store/workspace/useDashboardStore";
 import { Progress } from "@heroui/react";
+import { LayoutPanelLeft } from "lucide-react";
 import { useTranslations } from "next-intl";
 import React, { useEffect } from "react";
 
@@ -26,10 +27,14 @@ const AdminDashboard = () => {
 
   return (
     <div className="p-4 w-full max-h-[calc(100dvh-76px)] overflow-y-auto scrollbar-hide">
-      <div className="p-2">
-        <Heading>{t("title")}</Heading>
+      <div className="flex flex-wrap">
+        <div className="border p-2 rounded-xl flex gap-2 items-center">
+          <LayoutPanelLeft className="w-4 h-4" />
+          <Subheading>{t("title")}</Subheading>
+        </div>
       </div>
-      <div className="grid grid-cols-2 gap-4">
+
+      <div className="grid grid-cols-2 gap-4 mt-4">
         <div className="col-span-1 flex flex-col gap-4 justify-space-between shadow-md border-t dark:border-none dark:bg-zinc-800 p-4 rounded-xl">
           <Subheading>{t("server")}</Subheading>
           <Progress

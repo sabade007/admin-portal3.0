@@ -6,6 +6,7 @@ import AdminDashboard from "./admindashboard/AdminDashboard";
 import AdvancedSettings from "./settings/AdvancedSettings";
 import AppControl from "./appcontrol/AppControl";
 import Activity from "./activity/Activity";
+import UserStore from "./userstore/UserStore";
 
 const WorkspaceContent = () => {
   const { currentTab } = useWorkspaceStore();
@@ -17,7 +18,7 @@ const WorkspaceContent = () => {
       {currentTab === "dashboard" && <AdminDashboard />}
       {currentTab === "applicationcontrol" && <AppControl />}
       {currentTab === "activity" && <Activity />}
-      {currentTab === "userstore" && <div>UserStore</div>}
+      {currentTab === "userstore" && <UserStore />}
       {currentTab === "advanced" && <AdvancedSettings />}
     </div>
   );

@@ -12,6 +12,8 @@ import { EmptyApps, Search } from "@/lib/svg";
 import Tiny from "@/components/themes/Tiny";
 import { addToast } from "@heroui/react";
 import Heading from "@/components/themes/Heading";
+import { Bookmark, BookmarkPlus, LayoutGrid } from "lucide-react";
+import Button from "@/components/themes/Button";
 
 const MyApps = () => {
   const t = useTranslations("WorkSpace");
@@ -140,7 +142,7 @@ const MyApps = () => {
             : fontsize === "md"
             ? "w-[150px]"
             : "w-[180px]"
-        } relative dark:bg-zinc-800 h-auto p-2 gap-2 shadow-sm border dark:border dark:border-zinc-800 rounded-2xl  group cursor-pointer  transition-shadow flex flex-col items-center justify-center`}
+        } relative dark:bg-zinc-800 h-auto p-2 gap-2 shadow-md border dark:border dark:border-zinc-800 rounded-2xl  group cursor-pointer  transition-shadow flex flex-col items-center justify-center`}
         onClick={() => {
           if (url && url.trim().toLowerCase() !== "null" && url.trim() !== "") {
             window.open(url, "_blank");
@@ -179,8 +181,11 @@ const MyApps = () => {
 
   return (
     <div className="p-4 w-full max-h-[calc(100dvh-76px)] overflow-y-auto scrollbar-hide">
-      <div className="">
-        <Heading>{t("MyApps.title")}</Heading>
+      <div className="flex flex-wrap">
+        <div className="border p-2 rounded-xl flex gap-2 items-center">
+          <LayoutGrid className="w-4 h-4" />
+          <Subheading>{t("MyApps.title")}</Subheading>
+        </div>
       </div>
 
       <div className="flex flex-wrap gap-4 mt-2 mb-4">
@@ -209,9 +214,18 @@ const MyApps = () => {
         )}
       </div>
       <div>
-        <div className="">
-          <Heading>{t("MyApps.bookmark")}</Heading>
+        <div className="flex flex-wrap gap-4">
+          <div className="border p-2 rounded-xl flex gap-2 items-center">
+            <Bookmark className="w-4 h-4" />
+            <Subheading>{t("MyApps.bookmark")}</Subheading>
+          </div>
+          {/* <div>
+            <Button isIconOnly>
+              <BookmarkPlus className="w-4 h-4" />
+            </Button>
+          </div> */}
         </div>
+
         <div className="flex flex-wrap gap-4 mt-2 ">
           {filteredBookmarks.map((app) => (
             <AppCard

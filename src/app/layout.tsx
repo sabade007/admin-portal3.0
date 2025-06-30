@@ -42,7 +42,7 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const messagesByLocale = { en };
+  const messagesByLocale = { en, kn };
 
   // const locale = await getLocale();
 
