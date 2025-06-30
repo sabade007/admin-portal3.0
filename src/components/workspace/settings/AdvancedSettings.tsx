@@ -11,9 +11,23 @@ import FileSize from "./FileSize";
 import Oauth from "./Oauth";
 import Branding from "./Branding";
 import MaintenanceSettings from "./MaintenanceSettings";
+import { getCookie, setCookie } from "cookies-next";
 
 const AdvancedSettings = () => {
   const t = useTranslations("AdvancedSettings");
+
+  const initialTab = ((): string => {
+    const cookieTab = getCookie("advancedSettingsTab");
+    return typeof cookieTab === "string" ? cookieTab : "general";
+  })();
+
+  const [selectedTab, setSelectedTab] = React.useState<string>(initialTab);
+
+  const handleTabChange = (key: React.Key) => {
+    const tabKey = key.toString();
+    setSelectedTab(tabKey);
+    setCookie("advancedSettingsTab", tabKey, { maxAge: 60 * 60 * 24 * 7 }); // 7 days
+  };
 
   return (
     <div className="">
@@ -25,6 +39,8 @@ const AdvancedSettings = () => {
           aria-label="Options"
           variant="underlined"
           className="w-full"
+          selectedKey={selectedTab}
+          onSelectionChange={handleTabChange}
           classNames={{
             tabContent: "group-data-[selected=true]:text-iconcolor ",
             tabList:

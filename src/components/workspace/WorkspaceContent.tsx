@@ -5,6 +5,7 @@ import MyApps from "./myapps/MyApps";
 import AdminDashboard from "./admindashboard/AdminDashboard";
 import AdvancedSettings from "./settings/AdvancedSettings";
 import AppControl from "./appcontrol/AppControl";
+import Activity from "./activity/Activity";
 
 const WorkspaceContent = () => {
   const { currentTab } = useWorkspaceStore();
@@ -15,7 +16,7 @@ const WorkspaceContent = () => {
       {currentTab === "myapps" && <MyApps />}
       {currentTab === "dashboard" && <AdminDashboard />}
       {currentTab === "applicationcontrol" && <AppControl />}
-      {currentTab === "activity" && <div>Activity</div>}
+      {currentTab === "activity" && <Activity />}
       {currentTab === "userstore" && <div>UserStore</div>}
       {currentTab === "advanced" && <AdvancedSettings />}
     </div>

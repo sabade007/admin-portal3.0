@@ -19,6 +19,8 @@ import { EmptyApps, Search as SearchSvg } from "@/lib/svg";
 import Paragraph from "@/components/themes/Paragraph";
 import Switch from "@/components/themes/Switch";
 import EditApplication from "./EditApplication";
+import AddRoles from "./AddRoles";
+import RemoveRoles from "./RemoveRoles";
 
 const ApplicationControl = () => {
   const t = useTranslations("AppControl.ApplicationControl");
@@ -406,20 +408,39 @@ const ApplicationControl = () => {
                 />
               )}
           </div>
-          {/*  {currentTab === "removeUsers" && selectedRoleId && (
-              <RemoveUsers
-                selectedRoleId={selectedRoleId}
-                selectedRoleName={selectedRoleName}
+          {currentTab === "addRoles" &&
+            selectedApplicationId &&
+            !createApplication && (
+              <AddRoles
+                appId={selectedApplicationId}
+                appName={selectedApplicationName}
+                appUrl={selectedApplicationUrl}
+                isEnabled={selectedApplicationIsEnabled}
+                appLogo={selectedApplicationLogo}
+                isDefault={selectedApplicationTypeDefault}
               />
             )}
 
-            {!selectedRoleId && (
+          {currentTab === "removeRoles" &&
+            selectedApplicationId &&
+            !createApplication && (
+              <RemoveRoles
+                appId={selectedApplicationId}
+                appName={selectedApplicationName}
+                appUrl={selectedApplicationUrl}
+                isEnabled={selectedApplicationIsEnabled}
+                appLogo={selectedApplicationLogo}
+                isDefault={selectedApplicationTypeDefault}
+              />
+            )}
+
+          {!selectedApplicationId ||
+            (createApplication && (
               <div className="flex mt-2 flex-col items-center gap-2">
                 <EmptyApps className="w-24 h-24" />
-                <Paragraph>{t("selectRole")}</Paragraph>
+                <Paragraph>{t("selectApp")}</Paragraph>
               </div>
-            )}
-           */}
+            ))}
         </div>
       </div>
     </div>

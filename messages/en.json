@@ -511,6 +511,56 @@
       "isDisabled": "Application Disabled",
       "updateSuccess": "Application updated successfully",
       "updateError": "Failed to update application"
+    },
+
+    "AddRoles": {
+      "addRoles": "Add Roles",
+      "addRoleSuccess": "Role added successfully",
+      "update": "Update",
+      "addRoleError": "Failed to add role",
+      "removeRoleSuccess": "Role removed successfully",
+      "removeRoleError": "Failed to remove role",
+      "deselectAll": "Deselect All",
+      "selectAll": "Select All",
+      "noroles": "No roles found",
+      "searchRoles": "Search Roles",
+      "searchEmpty": "No roles found matching search criteria or all roles have already been added"
+    },
+    "RemoveRoles": {
+      "removeRoles": "Remove Roles",
+      "removeRoleSuccess": "Role removed successfully",
+      "removeRoleError": "Failed to remove role",
+      "deselectAll": "Deselect All",
+      "selectAll": "Select All",
+      "noroles": "No roles found",
+      "searchRoles": "Search Roles",
+      "searchEmpty": "No roles found matching search criteria or all roles have already been removed",
+      "noRolesAssigned": "No roles assigned",
+      "noRolesFound": "No roles found"
+    }
+  },
+
+  "Activity": {
+    "title": "Activity",
+    "title2": "User Activity",
+    "title1": "Admin Activity",
+    "noActivity": "No activity found",
+
+    "AdminActivity": {
+      "fromdate": "From Date",
+      "todate": "To Date",
+      "search": "Search",
+      "fromdateError": "From Date is required",
+      "todateError": "To Date is required",
+      "searchError": "Search value is required",
+      "itemsPerPage": "Items per page"
+    },
+    "UserActivity": {
+      "fromDateLabel": "From Date & Time",
+      "toDateLabel": "To Date & Time",
+      "search": "Search",
+      "noActivityFound": "No activity found.",
+      "itemsPerPage": "Items per page"
     }
   }
 }

@@ -43,6 +43,11 @@ interface RbacState {
   deleteApplications: (applicationIds: any) => Promise<any>;
 
   editApplications: (body: any) => Promise<any>;
+
+  removeRolesfromApplications: (
+    applicationId: any,
+    roleIds: any
+  ) => Promise<any>;
 }
 
 const useRbacStore = create<RbacState>((set) => ({
@@ -266,6 +271,31 @@ const useRbacStore = create<RbacState>((set) => ({
       );
       const data = response.data;
       return data;
+    } catch (err: any) {
+      console.log(err);
+      addToast({
+        title: err.message,
+        color: "danger",
+      });
+    }
+  },
+
+  removeRolesfromApplications: async (applicationId, roleIds) => {
+    try {
+      const params = new URLSearchParams();
+      params.append("applicationId", applicationId);
+
+      roleIds.forEach((id: any) => {
+        params.append("roleId", id);
+      });
+
+      const response = await axiosInstance.post(
+        `${env(
+          "NEXT_PUBLIC_BACKEND_URL"
+        )}portal/removerolefromapplication?${params.toString()}`
+      );
+
+      return response;
     } catch (err: any) {
       console.log(err);
       addToast({

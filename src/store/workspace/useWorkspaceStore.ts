@@ -1,54 +1,48 @@
-// store/useWorkspaceStore.ts
 import axiosInstance from "@/hooks/axios";
 import { addToast } from "@heroui/react";
+import { getCookie, setCookie } from "cookies-next";
 import { env } from "next-runtime-env";
 import { create } from "zustand";
 
 type WorkspaceState = {
   currentTab: string;
   setCurrentTab: (key: string) => void;
-
   currentMobileTab: string;
   setCurrentMobileTab: (key: string) => void;
-
   orgId: number;
   setOrgId: (key: number) => void;
-
   userRole: string;
   setUserRole: (key: string) => void;
-
   applicationArray: any[];
   setApplicationArray: (applicationArray: any[]) => void;
-
   displayPicture: string;
   setDisplayPicture: (key: string) => void;
-
   emailAddress: string;
   setEmailAddress: (key: string) => void;
-
   userName: string;
   setUserName: (key: string) => void;
-
   fullName: string;
   setFullName: (key: string) => void;
-
   bookMarks: any[];
   setBookMarks: (bookMarks: any[]) => void;
-
   getUserDetails: () => Promise<any | undefined>;
-
   getAllApplications: (orgId: any) => Promise<any | undefined>;
-
   initializeWorkspace: () => Promise<void>;
-
   createnewApplication: (body: any, orgId: any) => Promise<any | undefined>;
-
   getbookmarks: () => Promise<any | undefined>;
 };
 
+const getInitialTab = () => {
+  const tab = getCookie("currentTab");
+  return typeof tab === "string" ? tab : "suite";
+};
+
 const useWorkspaceStore = create<WorkspaceState>((set) => ({
-  currentTab: "suite",
-  setCurrentTab: (key) => set({ currentTab: key }),
+  currentTab: getInitialTab(),
+  setCurrentTab: (key: string) => {
+    setCookie("currentTab", key, { maxAge: 60 * 60 * 24 * 7 });
+    set({ currentTab: key });
+  },
 
   currentMobileTab: "suitemob",
   setCurrentMobileTab: (key) => set({ currentMobileTab: key }),
@@ -116,7 +110,7 @@ const useWorkspaceStore = create<WorkspaceState>((set) => ({
       if (Array.isArray(data) && data.length > 0) {
         set({ applicationArray: data });
       } else {
-        set({ applicationArray: [] }); // Optional: clear if no data
+        set({ applicationArray: [] });
       }
       return data;
     } catch (err: any) {
@@ -135,8 +129,7 @@ const useWorkspaceStore = create<WorkspaceState>((set) => ({
           `portal/createapplication/${orgId}?isVdiApplication=true`,
         body
       );
-      const data = response.data;
-      return data;
+      return response.data;
     } catch (err: any) {
       console.log(err);
       addToast({
@@ -173,7 +166,6 @@ const useWorkspaceStore = create<WorkspaceState>((set) => ({
   initializeWorkspace: async () => {
     try {
       const userDetails = await useWorkspaceStore.getState().getUserDetails();
-
       if (!userDetails?.orgId) return;
 
       const orgId = userDetails.orgId;
@@ -208,6 +200,7 @@ const useWorkspaceStore = create<WorkspaceState>((set) => ({
 
         await useWorkspaceStore.getState().getAllApplications(orgId);
       }
+
       await useWorkspaceStore.getState().getbookmarks();
     } catch (err: any) {
       addToast({

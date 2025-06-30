@@ -2,18 +2,19 @@ import Heading from "@/components/themes/Heading";
 import Subheading from "@/components/themes/SubHeading";
 import { Tab, Tabs } from "@heroui/react";
 import React from "react";
-import RoleControl from "./RoleControl";
-import ApplicationControl from "./ApplicationControl";
+
 import { useTranslations } from "next-intl";
 import { getCookie, setCookie } from "cookies-next";
+import AdminActivity from "./AdminActivity";
+import UserActivity from "./UserActivity";
 
-const AppControl = () => {
-  const t = useTranslations("AppControl");
+const Activity = () => {
+  const t = useTranslations("Activity");
 
   // Get initial tab from cookie, default to "rbac"
   const initialTab = ((): string => {
-    const cookieTab = getCookie("appControlTab");
-    return typeof cookieTab === "string" ? cookieTab : "rbac";
+    const cookieTab = getCookie("activityTab");
+    return typeof cookieTab === "string" ? cookieTab : "admin";
   })();
 
   const [selectedTab, setSelectedTab] = React.useState<string>(initialTab);
@@ -21,7 +22,7 @@ const AppControl = () => {
   const handleTabChange = (key: React.Key) => {
     const tabKey = key.toString();
     setSelectedTab(tabKey);
-    setCookie("appControlTab", tabKey, { maxAge: 60 * 60 * 24 * 7 }); // 7 days
+    setCookie("activityTab", tabKey, { maxAge: 60 * 60 * 24 * 7 }); // 7 days
   };
 
   return (
@@ -38,15 +39,15 @@ const AppControl = () => {
             "text-textcolor  rounded-xl font-semibold border dark:border-zinc-800 p-0",
         }}
       >
-        <Tab key="rbac" title={<Subheading>{t("title1")}</Subheading>}>
-          <RoleControl />
+        <Tab key="admin" title={<Subheading>{t("title1")}</Subheading>}>
+          <AdminActivity />
         </Tab>
-        <Tab key="applications" title={<Subheading>{t("title2")}</Subheading>}>
-          <ApplicationControl />
+        <Tab key="user" title={<Subheading>{t("title2")}</Subheading>}>
+          <UserActivity />
         </Tab>
       </Tabs>
     </div>
   );
 };
 
-export default AppControl;
+export default Activity;
