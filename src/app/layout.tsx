@@ -11,8 +11,20 @@ import en from "../../messages/en.json";
 import fr from "../../messages/fr.json";
 import hi from "../../messages/hi.json";
 import kn from "../../messages/kn.json";
+import ar from "../../messages/ar.json";
+import bn from "../../messages/bn.json";
+import de from "../../messages/de.json";
+import es from "../../messages/es.json";
+import ja from "../../messages/ja.json";
+import ml from "../../messages/ml.json";
+import pt from "../../messages/pt.json";
+import ru from "../../messages/ru.json";
+import ta from "../../messages/ta.json";
+import te from "../../messages/te.json";
+import zhCN from "../../messages/zh-CN.json";
 
 import { env, PublicEnvScript } from "next-runtime-env";
+import AppDirectionManager from "./AppDirectionManager";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -42,12 +54,31 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const messagesByLocale = { en, kn };
+  const messagesByLocale = {
+    en,
+    kn,
+    hi,
+    fr,
+    ar,
+    bn,
+    de,
+    es,
+    ja,
+    ml,
+    pt,
+    ru,
+    ta,
+    te,
+    zhCN,
+  };
 
-  // const locale = await getLocale();
+  const rtlLocales = ["ar", "he", "fa", "ur"];
+
+  const locale = await getLocale();
+  const isRtl = rtlLocales.includes(locale);
 
   return (
-    <html>
+    <html lang={locale} dir={isRtl ? "rtl" : "ltr"}>
       <head>
         <link
           rel="icon"
@@ -67,7 +98,10 @@ export default async function RootLayout({
       >
         <PublicEnvScript />
         <IntlProvider messagesByLocale={messagesByLocale}>
-          <Provider>{children}</Provider>
+          <Provider>
+            <AppDirectionManager />
+            {children}
+          </Provider>
         </IntlProvider>
       </body>
     </html>

@@ -54,68 +54,6 @@ const MyApps = () => {
         )
       : bookMarks;
 
-  // const AppCard = ({
-  //   logo,
-  //   name,
-  //   url,
-  //   themeColor,
-  // }: {
-  //   logo: string;
-  //   name: string;
-  //   url?: string;
-  //   themeColor: string;
-  // }) => {
-  //   const lineVariants = {
-  //     initial: { scaleX: 0, opacity: 0 },
-  //     hover: { scaleX: 0.8, opacity: 1 },
-  //   };
-
-  //   return (
-  //     <motion.div
-  //       whileHover="hover"
-  //       initial="initial"
-  //       className={`${
-  //         fontsize === "sm"
-  //           ? "w-[130px]"
-  //           : fontsize === "md"
-  //           ? "w-[150px]"
-  //           : "w-[180px]"
-  //       } relative h-auto dark:bg-zinc-800 p-3 gap-2 border-t dark:border-none h-auto shadow-md rounded-2xl group cursor-pointer transition-shadow flex flex-col items-center justify-center`}
-  //       onClick={() => {
-  //         if (url && url.trim().toLowerCase() !== "null" && url.trim() !== "") {
-  //           window.open(url, "_blank");
-  //         } else {
-  //           addToast({
-  //             title: t("MyApps.applicationUrlnotfoundtitle"),
-  //             description: t("MyApps.applicationUrlnotfounddesc"),
-  //           });
-  //         }
-  //       }}
-  //     >
-  //       <motion.div
-  //         variants={lineVariants}
-  //         transition={{ duration: 0.3, ease: "easeOut" }}
-  //         className="absolute bottom-0 left-0 w-full h-[3px] origin-center rounded"
-  //         style={{ backgroundColor: themeColor }}
-  //       />
-  //       <div className="grid grid-rows-2 gap-2">
-  //         <div className="row-span-1 flex items-center justify-center">
-  //           {typeof logo === "string" && logo.trim() !== "" ? (
-  //             <img src={logo} alt={name} className="w-8 h-8 object-contain" />
-  //           ) : (
-  //             <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-xs text-gray-500">
-  //               {name[0]}
-  //             </div>
-  //           )}
-  //         </div>
-  //         <div className="text-center row-span-1 flex items-center">
-  //           <Paragraph>{name}</Paragraph>
-  //         </div>
-  //       </div>
-  //     </motion.div>
-  //   );
-  // };
-
   const AppCard = ({
     name,
     url,

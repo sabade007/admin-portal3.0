@@ -1,13 +1,11 @@
 {
   "HomePage": {
-    "title": "नमस्ते दुनिया!"
+    "title": "हैलो वर्ल्ड!"
   },
-
   "SplashScreen": {
-    "taglineFirstHalf": "तेज़ करें",
-    "taglineLastHalf": "अपना सहयोग"
+    "taglineFirstHalf": "में तेजी लाने",
+    "taglineLastHalf": "आपका सहयोग"
   },
-
   "Ux": {
     "FontsizeSelector": {
       "title": "फ़ॉन्ट आकार",
@@ -15,155 +13,546 @@
       "medium": "मध्यम",
       "large": "बड़ा"
     },
-
     "ThemeSelector": {
-      "title": "थीम",
+      "title": "विषय",
       "light": "हल्की हवा",
-      "dark": "गहरी छाया",
-      "mint": "मिंट मूड",
-      "artic": "आर्कटिक ग्लो",
-      "rose": "गुलाबी तरंग",
+      "dark": "छाया लक्स",
+      "mint": "टकसाल",
+      "artic": "आर्टिक ग्लो",
+      "rose": "गुलाब की लहर",
       "coral": "कोरल एम्बर",
-      "lilac": "बैंगनी फुसफुसाहट"
+      "lilac": "लिलाक कानाफूसी"
     },
-
     "LanguageSelector": {
       "title": "भाषा",
       "english": "अंग्रेज़ी",
-      "spanish": "स्पेनिश",
-      "french": "फ्रेंच",
+      "spanish": "स्पैनिश",
+      "french": "फ्रांसीसी",
       "german": "जर्मन",
       "italian": "इतालवी",
       "portuguese": "पुर्तगाली"
     },
-
     "ThemetypeSelector": {
       "title": "थीम प्रकार",
       "dense": "घना",
-      "minimal": "सरल",
-      "outlined": "रूपरेखा"
+      "minimal": "न्यूनतम",
+      "outlined": "उल्लिखित"
     }
   },
-
   "Setup": {
-    "title": "सेटअप विज़ार्ड",
+    "title": "स्थापना विज़ार्ड",
     "welcome": "Indryve में आपका स्वागत है",
-    "description": "आप अपनी संस्था से संबंधित कुछ प्रमुख विवरण दर्ज करके और अपनी पसंदीदा कॉन्फ़िगरेशन सेटिंग्स चुनकर शुरू करेंगे। इसके बाद, हम आपको एक व्यवस्थापक खाता सेटअप करने में मदद करेंगे—और फिर Indryve उपयोग के लिए पूरी तरह तैयार हो जाएगा।",
-    "next": "चलिए शुरू करते हैं।",
-    "next2": "आगे",
-    "finish": "समाप्त",
-
+    "description": "आप अपने संगठन के बारे में कुछ प्रमुख विवरण दर्ज करके और अपनी पसंदीदा कॉन्फ़िगरेशन सेटिंग्स चुनकर शुरू करेंगे।अगला, हम आपको एक व्यवस्थापक खाता स्थापित करने में मदद करेंगे - एक बार जो किया जाता है, इंद्रवे का उपयोग करने के लिए पूरी तरह से तैयार हो जाएगा।",
+    "next": "आएँ शुरू करें।",
+    "next2": "अगला",
+    "finish": "खत्म करना",
     "Tabs": {
       "Tab1": "संगठन",
       "Tab2": "संपर्क",
       "Tab3": "व्यवस्थापक",
       "Tab4": "ईमेल",
-      "Tab5": "उन्नत",
+      "Tab5": "विकसित",
       "Tab6": "अनुप्रयोग"
     },
-
     "Organization": {
-      "title": "आइए आपके संगठन को सेट करें",
-      "description": "कृपया अपने संगठन का विवरण दर्ज करें",
-      "subheading2": "संगठन थीम (वैकल्पिक)",
+      "title": "चलो अपने संगठन को सेट करें",
+      "description": "कृपया अपना संगठन विवरण दर्ज करें",
+      "subheading2": "संगठन विषय (वैकल्पिक)",
       "subheading1": "संगठन विवरण",
       "name": "संगठन का नाम",
       "nameError": "संगठन का नाम आवश्यक है",
-      "size": "संगठन का आकार",
+      "size": "संगठन आकार",
       "sizeError": "संगठन का आकार आवश्यक है",
-      "type": "संगठन का प्रकार",
-      "typeError": "संगठन का प्रकार आवश्यक है",
-      "industry": "संगठन का उद्योग",
-      "industryError": "संगठन का उद्योग आवश्यक है",
-      "logo": "संगठन का लोगो",
-      "logoError": "संगठन का लोगो आवश्यक है",
-      "tagline": "संगठन की टैगलाइन",
-      "taglineError": "संगठन की टैगलाइन आवश्यक है"
+      "type": "संगठन प्रकार",
+      "typeError": "संगठन प्रकार की आवश्यकता है",
+      "industry": "संगठन उद्योग",
+      "industryError": "संगठन उद्योग की आवश्यकता है",
+      "logo": "संगठन लोगो",
+      "logoError": "संगठन लोगो की आवश्यकता है",
+      "tagline": "संगठन टैगलाइन",
+      "taglineError": "संगठन टैगलाइन की आवश्यकता है"
     },
-
     "Contact": {
-      "title": "आइए जुड़ते हैं",
-      "description": "कृपया अपने संपर्क विवरण दर्ज करें",
-      "subheading": "संपर्क विवरण",
+      "title": "चलो जुड़ते हैं",
+      "description": "कृपया अपना संपर्क विवरण दर्ज करें",
+      "subheading": "सम्पर्क करने का विवरण",
       "name": "पूरा नाम",
       "nameError": "पूरा नाम आवश्यक है",
-      "website": "संगठन की वेबसाइट",
-      "websiteError": "संगठन की वेबसाइट आवश्यक है",
-      "emailError": "संपर्क ईमेल आवश्यक है",
-      "phone": "संपर्क मोबाइल नंबर",
-      "phoneError": "संपर्क मोबाइल नंबर आवश्यक है",
+      "website": "संगठन वेबसाइट",
+      "websiteError": "संगठन वेबसाइट की आवश्यकता है",
+      "emailError": "संपर्क ईमेल की आवश्यकता है",
+      "phone": "मोबाइल नंबर से संपर्क करें",
+      "phoneError": "संपर्क मोबाइल नंबर की आवश्यकता है",
       "country": "देश",
-      "countryError": "देश आवश्यक है"
+      "countryError": "देश की आवश्यकता है"
     },
-
     "Admin": {
-      "title": "आइए व्यवस्थापक को पूरी शक्ति दें!",
-      "description": "कृपया अपने व्यवस्थापक का विवरण दर्ज करें",
+      "title": "चलो प्रशासक को पूरी शक्ति दें!",
+      "description": "कृपया अपना व्यवस्थापक विवरण दर्ज करें",
       "subheading": "व्यवस्थापक विवरण",
       "adminName": "व्यवस्थापक उपयोगकर्ता नाम",
       "adminNameError": "व्यवस्थापक उपयोगकर्ता नाम आवश्यक है",
-      "adminPassword": "व्यवस्थापक पासवर्ड",
-      "adminPasswordError": "व्यवस्थापक पासवर्ड आवश्यक है",
-      "adminRepeatPassword": "पासवर्ड दोहराएं",
-      "adminRepeatPasswordError": "पासवर्ड दोहराना आवश्यक है",
+      "adminPassword": "व्यवस्थापक का पारण शब्द",
+      "adminPasswordError": "व्यवस्थापक पासवर्ड की आवश्यकता है",
+      "adminRepeatPassword": "व्यवस्थापक पासवर्ड दोहराएं",
+      "adminRepeatPasswordError": "दोहराने व्यवस्थापक पासवर्ड की आवश्यकता है",
       "adminEmail": "व्यवस्थापक ईमेल",
-      "adminEmailError": "व्यवस्थापक ईमेल आवश्यक है"
+      "adminEmailError": "व्यवस्थापक ईमेल की आवश्यकता है"
     },
-
     "Email": {
-      "title": "आइए आपका मेलबॉक्स सेट करें",
-      "description": "कृपया अपने ईमेल विवरण दर्ज करें",
-      "subheading": "कृपया अपना मेलबॉक्स विवरण दर्ज करें",
-      "smtpHost": "SMTP होस्ट",
-      "smtpHostError": "SMTP होस्ट आवश्यक है",
-      "smtpPort": "SMTP पोर्ट",
-      "smtpPortError": "SMTP पोर्ट आवश्यक है",
+      "title": "चलो अपना मेलबॉक्स सेटअप करें",
+      "description": "कृपया अपना ईमेल विवरण दर्ज करें",
+      "subheading": "अपना मेलबॉक्स विवरण प्रदान करें",
+      "smtpHost": "एसएमटीपी होस्ट",
+      "smtpHostError": "SMTP होस्ट की आवश्यकता है",
+      "smtpPort": "एसएमटीपी पोर्ट",
+      "smtpPortError": "SMTP पोर्ट की आवश्यकता है",
       "smtpUsername": "SMTP उपयोगकर्ता नाम",
-      "smtpUsernameError": "SMTP उपयोगकर्ता नाम आवश्यक है",
+      "smtpUsernameError": "SMTP उपयोगकर्ता नाम की आवश्यकता है",
       "smtpPassword": "SMTP पासवर्ड",
-      "smtpPasswordError": "SMTP पासवर्ड आवश्यक है",
-      "smtpProtocol": "SMTP प्रोटोकॉल",
-      "smtpProtocolError": "SMTP प्रोटोकॉल आवश्यक है",
-      "test": "कनेक्शन जांचें",
-      "testSuccessMessage": "कनेक्शन सफल हुआ",
-      "testErrorMessage": "कनेक्शन विफल हुआ",
+      "smtpPasswordError": "SMTP पासवर्ड की आवश्यकता है",
+      "smtpProtocol": "एसएमटीपी प्रोटोकॉल",
+      "smtpProtocolError": "SMTP प्रोटोकॉल की आवश्यकता है",
+      "test": "परीक्षा संबंध",
+      "testSuccessMessage": "कनेक्शन सफल",
+      "testErrorMessage": "कनेक्शन विफल",
       "smtpAuth": "SMTP प्रमाणीकरण सक्षम करें",
-      "tls": "Start TLS सक्षम करें"
+      "tls": "टीएलएस शुरू करने में सक्षम करें"
     },
-
     "Advanced": {
-      "title": "आइए आपकी उन्नत सेटिंग्स सेट करें",
-      "description": "कृपया अपने उन्नत विवरण दर्ज करें",
-      "subheading1": "उपयोगकर्ता स्टोर कॉन्फ़िगरेशन",
-      "subheading2": "OAuth | OIDC कॉन्फ़िगरेशन (वैकल्पिक)",
+      "title": "चलो अपनी उन्नत सेटिंग्स सेटअप करें",
+      "description": "कृपया अपना उन्नत विवरण दर्ज करें",
+      "subheading1": "उपयोगकर्ता स्टोर विन्यास",
+      "subheading2": "Oauth |OIDC कॉन्फ़िगरेशन (वैकल्पिक)",
       "self": "स्वयं पंजीकरण सक्षम करें",
       "ldap": "LDAP सक्षम करें",
-      "issuerUrl": "Issuer URL",
-      "clientId": "क्लाइंट ID",
-      "clientSecret": "क्लाइंट सीक्रेट",
-      "issuerUrlError": "Issuer URL आवश्यक है",
-      "clientIdError": "क्लाइंट ID आवश्यक है",
-      "clientSecretError": "क्लाइंट सीक्रेट आवश्यक है"
+      "issuerUrl": "जारीकर्ता URL",
+      "clientId": "ग्राहक आईडी",
+      "clientSecret": "ग्राहक गुप्त",
+      "issuerUrlError": "जारीकर्ता URL की आवश्यकता है",
+      "clientIdError": "क्लाइंट आईडी की आवश्यकता है",
+      "clientSecretError": "क्लाइंट सीक्रेट की आवश्यकता है"
     },
-
     "Applications": {
-      "title": "आइए आपके एप्लिकेशन सेट करें",
+      "title": "आइए अपने एप्लिकेशन सेटअप करें",
       "description": "कृपया अपने एप्लिकेशन विवरण दर्ज करें",
-      "subheading": "कृपया अपने एप्लिकेशन यूआरएल दर्ज करें",
-      "indryve": "Indryve",
-      "mail": "Indryve मेल",
+      "subheading": "अपने आवेदन URL प्रदान करें",
+      "indryve": "इंडरिन करना",
+      "mail": "मेल",
       "chat": "Indryve चैट",
       "video": "Indryve वीडियो",
-      "meet": "Indryve मीट",
-      "url": "एप्लिकेशन URL"
+      "meet": "Indryve मिलते हैं",
+      "url": "अनुप्रयोग URL"
     },
-
     "Modal": {
       "title": "सत्यापन",
-      "description": "कृपया पुष्टि करें कि आप मानव हैं",
+      "description": "कृपया सत्यापित करें कि आप एक इंसान हैं",
       "verify": "सत्यापित करें",
       "captchaValue": "कैप्चा दर्ज करें",
-      "create": "एप्लिकेशन बनाए जा रहे हैं"
+      "create": "अनुप्रयोग बनाना"
+    }
+  },
+  "Login": {
+    "LoginForm": {
+      "title": "प्रशासक लॉगिन",
+      "description": "कृपया अपना लॉगिन विवरण दर्ज करें",
+      "email": "ईमेल पता या उपयोगकर्ता नाम",
+      "emailError": "ईमेल पता या उपयोगकर्ता नाम आवश्यक है",
+      "password": "पासवर्ड",
+      "passwordError": "पासवर्ड की आवश्यकता है",
+      "captcha": "कैप्चा दर्ज करें",
+      "captchaError": "कैप्चा की आवश्यकता है",
+      "login": "लॉग इन करें",
+      "forgot": "पासवर्ड भूल गए?",
+      "tooltip": "उपयोगिताओं को दिखाएं",
+      "loginSuccessMessage": "लॉग इन सफल",
+      "loginErrorMessage": "लॉगिन विफल, कृपया अपने क्रेडेंशियल्स या कैप्चा की जाँच करें",
+      "localStorageError": "स्थानीय भंडारण तक पहुंचने में विफल"
+    },
+    "ForgotPassword": {
+      "title": "पासवर्ड भूल गए",
+      "description": "चिंता न करें, हम आपको अपना पासवर्ड रीसेट करने के लिए एक ईमेल भेजेंगे",
+      "email": "मेल पता",
+      "emailError": "ईमेल पते की ज़रुरत है",
+      "submit": "लिंक भेजें",
+      "back": "रद्द करना",
+      "forgotSuccessMessage": "पासवर्ड रीसेट लिंक सफलतापूर्वक भेजा गया",
+      "forgotErrorMessage": "पासवर्ड रीसेट लिंक भेजने में विफल"
+    },
+    "LoginFooter": {
+      "copyright": "© 2025 Indryve।सर्वाधिकार सुरक्षित।",
+      "privacy": "गोपनीयता नीति",
+      "terms": "उपयोग की शर्तें",
+      "support": "सहायता"
+    }
+  },
+  "WorkSpace": {
+    "Header": {
+      "title": "संड्रक कार्यक्षेत्र"
+    },
+    "Sidebar": {
+      "suite": "सुइट ऐप्स",
+      "apps": "मेरी एप्प्स",
+      "dashboard": "चकरानेवाला",
+      "applicationcontrol": "अनुप्रयोग नियंत्रण",
+      "activity": "गतिविधि",
+      "userstore": "उपयोगकर्ता भंडार",
+      "advanced": "सेटिंग"
+    },
+    "Profile": {
+      "signed": "इस रूप में साइन इन किया",
+      "privacy": "गोपनीयता नीति",
+      "terms": "उपयोग की शर्तें",
+      "support": "सहायता",
+      "logout": "लॉग आउट"
+    },
+    "Search": {
+      "suite": "सुइट ऐप्स में खोजें",
+      "apps": "मेरे ऐप्स में खोजें",
+      "applicationcontrol": "आवेदन नियंत्रण में खोजें",
+      "activity": "गतिविधि में खोजें",
+      "userstore": "उपयोगकर्ता स्टोर में खोजें",
+      "search": "खोज"
+    },
+    "SuiteApps": {
+      "title": "सुइट अनुप्रयोग",
+      "sortby": "इसके अनुसार क्रमबद्ध करें",
+      "alphabetical": "नाम",
+      "searchResult": "खोज परिणाम खाली हैं",
+      "applicationUrlnotfoundtitle": "आवेदन URL नहीं मिला",
+      "applicationUrlnotfounddesc": "आवेदन URL मौजूद नहीं लगता है।कृपया अपने व्यवस्थापक से आवेदन को संपादित करने और पुनः प्रयास करने के लिए कहें।"
+    },
+    "MyApps": {
+      "title": "मेरे आवेदन",
+      "noApps": "आपके पास अभी तक कोई आवेदन नहीं है।कृपया अपने व्यवस्थापक को आरंभ करने के लिए एक एप्लिकेशन बनाने के लिए कहें।",
+      "searchResult": "खोज परिणाम खाली हैं",
+      "bookmark": "मेरे बुकमार्क्स",
+      "applicationUrlnotfoundtitle": "आवेदन URL नहीं मिला",
+      "applicationUrlnotfounddesc": "आवेदन URL मौजूद नहीं लगता है।कृपया अपने व्यवस्थापक से आवेदन को संपादित करने और पुनः प्रयास करने के लिए कहें।",
+      "noBookmarks": "कोई बुकमार्क नहीं मिला"
+    }
+  },
+  "WorkspaceMobile": {
+    "Navigation": {
+      "suiteapps": "सुइट ऐप्स",
+      "myapps": "मेरी एप्प्स",
+      "settings": "सेटिंग"
+    },
+    "Settings": {
+      "signed": "इस रूप में साइन इन किया",
+      "settings": "सेटिंग",
+      "links": "लिंक",
+      "privacy": "गोपनीयता नीति",
+      "terms": "उपयोग की शर्तें",
+      "support": "सहायता",
+      "logout": "लॉग आउट"
+    },
+    "Search": {
+      "suite": "सुइट ऐप्स में खोजें",
+      "apps": "मेरे ऐप्स में खोजें",
+      "search": "खोज"
+    }
+  },
+  "AdminDashboard": {
+    "title": "व्यवस्थापक डैशबोर्ड",
+    "server": "सर्वर आँकड़े",
+    "activeUsers": "सक्रिय उपयोगकर्ता",
+    "totalUsers": "कुल उपयोगकर्ता",
+    "totalSpaceUsed": "कुल स्थान का उपयोग किया",
+    "totalSpaceAllocated": "कुल स्थान आवंटित",
+    "serverCapacity": "सर्वर क्षमता",
+    "serverUsage": "सर्वर उपयोग",
+    "availableSpace": "उपलब्ध स्थान",
+    "gb": "जीबी में",
+    "serverUsageMessage": "सर्वर सुचारू रूप से चल रहा है।कोई समस्या नहीं मिली।"
+  },
+  "AdvancedSettings": {
+    "title": "एडवांस सेटिंग",
+    "registration": "पंजीकरण",
+    "maintenance": "रखरखाव",
+    "email": "ईमेल",
+    "ldap": "एलडीएपी",
+    "extensions": "एक्सटेंशन",
+    "filesize": "फ़ाइल का साइज़",
+    "oauth": "ओउथ",
+    "branding": "ब्रांडिंग"
+  },
+  "GeneralSettings": {
+    "title1": "डिफ़ॉल्ट आवंटित स्थान",
+    "desc1": "डिफ़ॉल्ट आवंटित स्थान केवल नए उपयोगकर्ताओं के लिए लागू होगा।",
+    "title2": "स्व -पंजीकरण",
+    "desc2": "नए उपयोगकर्ताओं के स्वयं पंजीकरण की अनुमति दें।साइनअप फॉर्म लॉगिन पेज पर प्रदर्शित किया जाएगा।",
+    "space": "जीबी में स्थान (केवल संख्या)",
+    "update": "अद्यतन",
+    "updateconfirm": "पुष्टि करें, अद्यतन करें",
+    "allowed": "अनुमत",
+    "notallowed": "अनुमति नहीं",
+    "updateSuccessFull": "सफलतापूर्वक अपडेट किया गया",
+    "allocatedSpaceError": "आवंटित स्थान की आवश्यकता है यह शून्य या खाली नहीं हो सकता है।"
+  },
+  "Smtp": {
+    "title": "SMTP सेटिंग्स",
+    "smtpHost": "एसएमटीपी होस्ट",
+    "smtpHostError": "SMTP होस्ट की आवश्यकता है",
+    "smtpPort": "एसएमटीपी पोर्ट",
+    "smtpPortError": "SMTP पोर्ट की आवश्यकता है",
+    "smtpUsername": "SMTP उपयोगकर्ता नाम",
+    "smtpUsernameError": "SMTP उपयोगकर्ता नाम की आवश्यकता है",
+    "smtpPassword": "SMTP पासवर्ड",
+    "smtpPasswordError": "SMTP पासवर्ड की आवश्यकता है",
+    "smtpProtocol": "एसएमटीपी प्रोटोकॉल",
+    "smtpProtocolError": "SMTP प्रोटोकॉल की आवश्यकता है",
+    "test": "परीक्षा संबंध",
+    "testSuccessMessage": "कनेक्शन सफल",
+    "testErrorMessage": "कनेक्शन विफल",
+    "smtpAuth": "SMTP प्रमाणीकरण सक्षम करें",
+    "tls": "टीएलएस शुरू करने में सक्षम करें",
+    "update": "अद्यतन",
+    "updateSuccess": "सफलतापूर्वक अपडेट किया गया",
+    "updateError": "अद्यतन करने में विफल"
+  },
+  "Extensions": {
+    "title1": "अवरुद्ध विस्तार",
+    "desc1": "इन एक्सटेंशन को अपलोड करने से अवरुद्ध कर दिया जाएगा।",
+    "title2": "अवरुद्ध माइम प्रकार",
+    "desc2": "इन माइम प्रकारों को अपलोड करने से अवरुद्ध कर दिया जाएगा।",
+    "extension": "विस्तार नाम",
+    "mime": "मिमी प्रकार",
+    "updateExtensionSuccess": "एक्सटेंशन ने अवरुद्ध सूची में सफलतापूर्वक जोड़ा",
+    "updateExtensionError": "अद्यतन करने में विफल",
+    "updateMimeSuccess": "Mime प्रकार को अवरुद्ध सूची में सफलतापूर्वक जोड़ा गया",
+    "updateMimeError": "अद्यतन करने में विफल",
+    "deleteExtensionSuccess": "एक्सटेंशन सफलतापूर्वक हटा दिया गया",
+    "deleteExtensionError": "हटाने में विफल",
+    "deleteMimeSuccess": "माइम प्रकार को सफलतापूर्वक हटा दिया गया",
+    "deleteMimeError": "हटाने में विफल",
+    "extensionvalueError": "विस्तार नाम की आवश्यकता है",
+    "mimevalueError": "MIME प्रकार की आवश्यकता है"
+  },
+  "Filesize": {
+    "title1": "अधिकतम अपलोड आकार",
+    "desc1": "अधिकतम अपलोड आकार केवल नए उपयोगकर्ताओं के लिए लागू होगा।",
+    "title2": "अधिकतम फ़ाइल अपलोड गणना",
+    "desc2": "अधिकतम फ़ाइल अपलोड गणना केवल नए उपयोगकर्ताओं के लिए लागू होगी।",
+    "update": "अद्यतन",
+    "confirm": "पुष्टि करें, अद्यतन करें",
+    "updateSuccess": "सफलतापूर्वक अपडेट किया गया",
+    "updateError": "अद्यतन करने में विफल",
+    "size": "एमबी में आकार (केवल संख्या)",
+    "count": "गिनती (केवल संख्या)",
+    "filesizeError": "फ़ाइलों की आवश्यकता है यह शून्य या खाली नहीं हो सकता है।",
+    "filecountError": "FileCount की आवश्यकता है यह शून्य या खाली नहीं हो सकता है।"
+  },
+  "OAuth": {
+    "title": "ओउथ सेटिंग्स",
+    "desc": "जल्द आ रहा है!!",
+    "clientid": "ग्राहक आईडी",
+    "clientidError": "क्लाइंट आईडी की आवश्यकता है",
+    "clientsecret": "ग्राहक गुप्त",
+    "clientsecretError": "क्लाइंट सीक्रेट की आवश्यकता है",
+    "issuerurl": "जारीकर्ता URL",
+    "issuerurlError": "जारीकर्ता URL की आवश्यकता है",
+    "update": "अद्यतन",
+    "confirm": "पुष्टि करें, अद्यतन करें",
+    "updateSuccess": "सफलतापूर्वक अपडेट किया गया",
+    "updateError": "अद्यतन करने में विफल"
+  },
+  "Branding": {
+    "title": "ब्रांडिंग सेटिंग्स",
+    "desc": "जल्द आ रहा है!!",
+    "update": "अद्यतन",
+    "confirm": "पुष्टि करें, अद्यतन करें",
+    "updateSuccess": "सफलतापूर्वक अपडेट किया गया",
+    "updateError": "अद्यतन करने में विफल",
+    "logo": "प्रतीक चिन्ह",
+    "logoError": "लोगो की आवश्यकता है",
+    "favicon": "फ़ेविकॉन",
+    "faviconError": "Favicon की आवश्यकता है",
+    "tagline": "TAGLINE",
+    "taglineError": "टैगलाइन की आवश्यकता है"
+  },
+  "Maintenance": {
+    "title1": "एक नया रखरखाव अनुसूची बनाएं",
+    "title2": "चालू रखरखाव अनुसूची",
+    "desc1": "एक नया रखरखाव अनुसूची बनाने से सभी मौजूदा शेड्यूल मिट जाते हैं",
+    "desc2": "चालू रखरखाव अनुसूची",
+    "start": "शुरू",
+    "end": "अंत",
+    "timeRange": "समय सीमा",
+    "startDate": "आरंभ करने की तिथि",
+    "endDate": "अंतिम तिथि",
+    "startTime": "समय शुरू",
+    "endTime": "अंत समय",
+    "addSchedule": "पुष्टि करें, अनुसूची जोड़ें",
+    "addScheduleSuccess": "शेड्यूल ने सफलतापूर्वक जोड़ा",
+    "addScheduleError": "Failed to add schedule",
+    "deleteScheduleSuccess": "शेड्यूल को सफलतापूर्वक हटा दिया गया",
+    "deleteScheduleError": "अनुसूची को हटाने में विफल",
+    "descriptionPlaceholder": "अपना विवरण दर्ज करें",
+    "notes": "नोट",
+    "reason": "कारण",
+    "update": "अद्यतन",
+    "updateSuccess": "सफलतापूर्वक अपडेट किया गया",
+    "updateError": "अद्यतन करने में विफल",
+    "successMessage": "रखरखाव अनुसूची सफलतापूर्वक अपडेट किया गया",
+    "descRequired": "विवरण आवश्यक है",
+    "reasonRequired": "कारण की आवश्यकता है",
+    "startRequired": "प्रारंभ तिथि की आवश्यकता है",
+    "endRequired": "अंतिम तिथि आवश्यक है",
+    "startTimeRequired": "प्रारंभ समय की आवश्यकता है",
+    "endTimeRequired": "अंत समय की आवश्यकता है",
+    "description": "रखरखाव विवरण",
+    "remove": "निकालना"
+  },
+  "AppControl": {
+    "title": "अनुप्रयोग नियंत्रण",
+    "title1": "भूमिका आधारित अभिगम नियंत्रण",
+    "title2": "अनुप्रयोग",
+    "Rbac": {
+      "title": "भूमिका आधारित अभिगम नियंत्रण",
+      "desc": "भूमिका आधारित अभिगम नियंत्रण सक्षम करें",
+      "roleName": "रोल नाम",
+      "roleNamePlaceholder": "भूमिका नाम दर्ज करें",
+      "createNewRoleSuccess": "भूमिका सफलतापूर्वक बनाई गई",
+      "createNewRoleError": "भूमिका बनाने में विफल",
+      "deleteRoleSuccess": "भूमिका सफलतापूर्वक हटा दी गई",
+      "deleteRoleError": "भूमिका को हटाने में विफल रहा",
+      "searchRoles": "खोज भूमिकाएँ",
+      "noRoles": "कोई भूमिका नहीं मिली।आरंभ करने के लिए एक भूमिका बनाएं।",
+      "searchEmpty": "कोई भी भूमिका खोज मानदंडों का मिलान नहीं मिला",
+      "addUsers": "उपयोगकर्ता जोड़ें",
+      "removeUsers": "उपयोगकर्ताओं को निकालें",
+      "addApplications": "ऐप्स जोड़ें",
+      "removeApplications": "ऐप्स निकालें",
+      "addUsersSuccess": "उपयोगकर्ताओं ने सफलतापूर्वक जोड़ा",
+      "addUsersError": "उपयोगकर्ताओं को जोड़ने में विफल",
+      "removeUsersSuccess": "उपयोगकर्ताओं ने सफलतापूर्वक हटा दिया",
+      "removeUsersError": "उपयोगकर्ताओं को हटाने में विफल",
+      "addApplicationsSuccess": "आवेदन सफलतापूर्वक जोड़े गए",
+      "addApplicationsError": "एप्लिकेशन जोड़ने में विफल",
+      "removeApplicationsSuccess": "अनुप्रयोगों को सफलतापूर्वक हटा दिया गया",
+      "removeApplicationsError": "अनुप्रयोगों को हटाने में विफल",
+      "searchUsers": "खोज उपयोगकर्ता",
+      "selectAll": "सबका चयन करें",
+      "deselectAll": "सबको अचयनित करो",
+      "nousers": "कोई उपयोगकर्ता नहीं मिला",
+      "selectRole": "उपयोगकर्ताओं को देखने के लिए एक भूमिका का चयन करें।"
+    },
+    "ApplicationControl": {
+      "applications": "अनुप्रयोग",
+      "editApplication": "अनुप्रयोग संपादित करें",
+      "addRoles": "भूमिकाएँ जोड़ें",
+      "removeRoles": "भूमिकाएँ निकालें",
+      "searchApplications": "खोज अनुप्रयोग",
+      "emptyApps": "कोई अनुप्रयोग नहीं मिला",
+      "searchEmpty": "कोई अनुप्रयोग खोज मानदंडों से मेल नहीं खाता है",
+      "newApplicationName": "अनुप्रयोग नाम",
+      "newApplicationUrl": "अनुप्रयोग URL",
+      "newApplicationLogo": "अनुप्रयोग लोगो",
+      "isEnabled": "अनुप्रयोग सक्षम",
+      "applicationNameError": "आवेदन का नाम आवश्यक है",
+      "applicationUrlError": "आवेदन URL की आवश्यकता है",
+      "applicationCreateSuccess": "अनुप्रयोग सफलतापूर्वक बनाया गया",
+      "applicationCreateError": "एप्लिकेशन बनाने में विफल",
+      "createApplicationBtn": "बनाएं",
+      "title": "नया एप्लिकेशन बनाएं",
+      "deleteSuccess": "आवेदन सफलतापूर्वक हटा दिया गया",
+      "deleteError": "आवेदन को हटाने में विफल"
+    },
+    "EditApplication": {
+      "update": "अद्यतन",
+      "appName": "अनुप्रयोग नाम",
+      "appNameError": "आवेदन का नाम आवश्यक है",
+      "appUrl": "अनुप्रयोग URL",
+      "appUrlError": "आवेदन URL की आवश्यकता है",
+      "appLogo": "अनुप्रयोग लोगो",
+      "isEnabled": "अनुप्रयोग सक्षम",
+      "isDisabled": "अक्षम अनुप्रयोग",
+      "updateSuccess": "आवेदन सफलतापूर्वक अपडेट किया गया",
+      "updateError": "एप्लिकेशन को अपडेट करने में विफल"
+    },
+    "AddRoles": {
+      "addRoles": "भूमिकाएँ जोड़ें",
+      "addRoleSuccess": "भूमिका सफलतापूर्वक जोड़ा गया",
+      "update": "अद्यतन",
+      "addRoleError": "भूमिका जोड़ने में विफल",
+      "removeRoleSuccess": "भूमिका सफलतापूर्वक हटा दी गई",
+      "removeRoleError": "भूमिका को हटाने में विफल रहा",
+      "deselectAll": "सबको अचयनित करो",
+      "selectAll": "सबका चयन करें",
+      "noroles": "कोई भूमिका नहीं मिली",
+      "searchRoles": "खोज भूमिकाएँ",
+      "searchEmpty": "कोई भी भूमिका मिलान खोज मानदंड या सभी भूमिकाओं को पहले से जोड़ा गया है"
+    },
+    "RemoveRoles": {
+      "removeRoles": "भूमिकाएँ निकालें",
+      "removeRoleSuccess": "भूमिका सफलतापूर्वक हटा दी गई",
+      "removeRoleError": "भूमिका को हटाने में विफल रहा",
+      "deselectAll": "सबको अचयनित करो",
+      "selectAll": "सबका चयन करें",
+      "noroles": "कोई भूमिका नहीं मिली",
+      "searchRoles": "खोज भूमिकाएँ",
+      "searchEmpty": "कोई भी भूमिका मिलान खोज मानदंड या सभी भूमिकाओं को पहले ही हटा दिया गया है",
+      "noRolesAssigned": "कोई भूमिका नहीं सौंपी गई",
+      "noRolesFound": "कोई भूमिका नहीं मिली"
+    }
+  },
+  "Activity": {
+    "title": "गतिविधि",
+    "title2": "उपयोगकर्ता गतिविधि",
+    "title1": "व्यवस्थापक गतिविधि",
+    "noActivity": "कोई गतिविधि नहीं मिली",
+    "AdminActivity": {
+      "fromdate": "की तिथि से",
+      "todate": "तारीख तक",
+      "search": "खोज",
+      "fromdateError": "तारीख से आवश्यक है",
+      "todateError": "आज तक आवश्यक है",
+      "searchError": "खोज मूल्य आवश्यक है",
+      "itemsPerPage": "प्रति पृष्ठ आइटम",
+      "noActivityFound": "कोई गतिविधि नहीं मिली।"
+    },
+    "UserActivity": {
+      "fromDateLabel": "तारीख और समय से",
+      "toDateLabel": "तिथि और समय",
+      "search": "खोज",
+      "noActivityFound": "कोई गतिविधि नहीं मिली।",
+      "itemsPerPage": "प्रति पृष्ठ आइटम"
+    }
+  },
+  "UserStore": {
+    "title1": "Iam उपयोगकर्ता",
+    "title2": "पंजीकृत उपयोगकर्ता",
+    "title3": "व्यवस्थापक ने उपयोगकर्ताओं को जोड़ा",
+    "title4": "अवरुद्ध उपयोगकर्ता",
+    "Iam": {
+      "userslist": "उपयोगकर्ता सूची",
+      "userDetails": "उपयोगकर्ता विवरण",
+      "noUsers": "कोई उपयोगकर्ता नहीं मिला",
+      "searchUsers": "खोज उपयोगकर्ता",
+      "searchEmpty": "किसी भी उपयोगकर्ता को मिलान खोज मानदंड नहीं मिला",
+      "block": "अवरोध पैदा करना",
+      "unblock": "अनब्लॉक",
+      "update": "अद्यतन",
+      "itemsPerPage": "प्रति पृष्ठ आइटम",
+      "selectUserPrompt": "विवरण देखने के लिए एक उपयोगकर्ता का चयन करें",
+      "username": "उपयोगकर्ता नाम",
+      "emailVerified": "ईमेल सत्यापित:",
+      "yes": "हाँ",
+      "no": "नहीं",
+      "none": "एन/ए",
+      "mobile": "मोबाइल नंबर",
+      "createdDate": "सृजित दिनांक",
+      "blocked": "अवरोधित",
+      "userRole": "उपयोगकर्ता भूमिका",
+      "storageLabel": "भंडारण",
+      "storage": "स्टोरेज का इस्तेमाल किया",
+      "storageUpdated": "स्टोरेज अपडेट किया गया",
+      "storageUpdatedError": "स्टोरेज अपडेट करने में विफल",
+      "userBlocked": "उपयोगकर्ता को सफलतापूर्वक अवरुद्ध कर दिया गया",
+      "userUnblocked": "उपयोगकर्ता सफलतापूर्वक अनब्लॉक हो गया",
+      "failedtoblock": "उपयोगकर्ता को ब्लॉक करने में विफल",
+      "nousers": "कोई उपयोगकर्ता नहीं मिला"
     }
   }
 }

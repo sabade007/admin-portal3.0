@@ -19,6 +19,13 @@ import Tiny from "@/components/themes/Tiny";
 import { addToast } from "@heroui/react";
 import Heading from "@/components/themes/Heading";
 import { LayoutGrid } from "lucide-react";
+import { useTheme } from "next-themes";
+
+import dicon from "@/assets/icons/dicon.svg";
+import chaticon from "@/assets/icons/chaticon.svg";
+import mailicon from "@/assets/icons/mailicon.svg";
+import meeticon from "@/assets/icons/meeticon.svg";
+import videosicon from "@/assets/icons/videosicon.svg";
 
 const SuiteApps = () => {
   const t = useTranslations("WorkSpace");
@@ -71,6 +78,40 @@ const SuiteApps = () => {
       initial: { scaleX: 0, opacity: 0 },
       hover: { scaleX: 0.8, opacity: 1 },
     };
+
+    // const { theme } = useTheme();
+    // const themeColors: Record<string, string> = {
+    //   light: "#ffffff",
+    //   dark: "#0ea5e9",
+    //   mint: "#ffffff",
+    //   coral: "#ffffff",
+    //   lilac: "#ffffff",
+    //   rose: "#ffffff",
+    //   artic: "#ffffff",
+    // };
+
+    // const themeCol: Record<string, string> = {
+    //   light: "#0A1153",
+    //   dark: "#0ea5e9",
+    //   mint: "#ffffff",
+    //   coral: "#ffffff",
+    //   lilac: "#ffffff",
+    //   rose: "#ffffff",
+    //   artic: "#ffffff",
+    // };
+
+    // const themeColo = themeColors[theme ?? "light"];
+
+    // const themeColo2 = themeCol[theme ?? "light"];
+
+    //   <div
+    //       style={{
+    //         background: `radial-gradient(circle at center,${themeColo} 30%,  ${themeColo2} 60% )`,
+    //       }}
+    //       className="rounded-full w-12 h-12 flex items-center justify-center"
+    //     >
+    //       <img src={dicon.src} alt="Dryve" className="w-8 h-8 " />
+    //     </div>
 
     return (
       <motion.div

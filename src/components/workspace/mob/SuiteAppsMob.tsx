@@ -17,6 +17,7 @@ import useSearchStore from "@/store/workspace/useSearchStore";
 import { EmptyApps, Search } from "@/lib/svg";
 import Tiny from "@/components/themes/Tiny";
 import { addToast } from "@heroui/react";
+import { LayoutGrid } from "lucide-react";
 
 const SuiteAppsMob = () => {
   const t = useTranslations("WorkSpace");
@@ -125,8 +126,11 @@ const SuiteAppsMob = () => {
 
   return (
     <div className="p-4 w-full max-h-[calc(100dvh-76px)] overflow-y-auto scrollbar-hide">
-      <div className="p-4">
-        <Subheading>{t("SuiteApps.title")}</Subheading>
+      <div className="flex flex-wrap">
+        <div className="border p-2 rounded-xl flex gap-2 items-center">
+          <LayoutGrid className="w-4 h-4" />
+          <Subheading>{t("SuiteApps.title")}</Subheading>
+        </div>
       </div>
 
       <div

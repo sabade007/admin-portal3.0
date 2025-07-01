@@ -79,7 +79,7 @@ const SidebarItem = ({
         <p
           className={`${
             selected ? "font-semibold" : ""
-          } text-center  text-[10px] ml-1`}
+          } text-center  text-[10px] ml-1 break-all  overflow-ellipsis `}
         >
           {label}
         </p>

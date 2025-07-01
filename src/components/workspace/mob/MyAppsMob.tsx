@@ -11,6 +11,7 @@ import useSearchStore from "@/store/workspace/useSearchStore";
 import { EmptyApps, Search } from "@/lib/svg";
 import Tiny from "@/components/themes/Tiny";
 import { addToast } from "@heroui/react";
+import { Bookmark, LayoutGrid } from "lucide-react";
 
 const MyAppsMob = () => {
   const t = useTranslations("WorkSpace");
@@ -111,8 +112,11 @@ const MyAppsMob = () => {
 
   return (
     <div className="p-4 w-full max-h-[calc(100dvh-76px)] overflow-y-auto scrollbar-hide">
-      <div className="p-4">
-        <Subheading>{t("MyApps.title")}</Subheading>
+      <div className="flex flex-wrap">
+        <div className="border p-2 rounded-xl flex gap-2 items-center">
+          <LayoutGrid className="w-4 h-4" />
+          <Subheading>{t("MyApps.title")}</Subheading>
+        </div>
       </div>
 
       <div
@@ -129,25 +133,28 @@ const MyAppsMob = () => {
             themeColor={themeColor}
           />
         ))}
-
-        {filteredApps.length === 0 && nonDefaultApps.length !== 0 && (
-          <div className="w-full h-full flex-col gap-4 flex items-center justify-center text-gray-400 text-sm">
-            <Search className="w-24 h-24" />
-            <Tiny> {t("MyApps.searchResult")}</Tiny>
-          </div>
-        )}
-
-        {nonDefaultApps.length === 0 && filteredApps.length === 0 && (
-          <div className="w-full h-full flex-col gap-4 flex items-center justify-center text-gray-400 text-sm">
-            <EmptyApps className="w-24 h-24" />
-            <Tiny> {t("MyApps.noApps")}</Tiny>
-          </div>
-        )}
       </div>
-      <div>
-        <div className="p-4">
-          <Subheading>{t("MyApps.bookmark")}</Subheading>
+      {filteredApps.length === 0 && nonDefaultApps.length !== 0 && (
+        <div className="w-full h-full flex-col gap-4 flex items-center justify-center text-gray-400 text-sm">
+          <Search className="w-24 h-24" />
+          <Tiny> {t("MyApps.searchResult")}</Tiny>
         </div>
+      )}
+
+      {nonDefaultApps.length === 0 && filteredApps.length === 0 && (
+        <div className="w-full h-full flex-col gap-4 flex items-center justify-center text-gray-400 text-sm">
+          <EmptyApps className="w-24 h-24" />
+          <Tiny> {t("MyApps.noApps")}</Tiny>
+        </div>
+      )}
+      <div>
+        <div className="flex flex-wrap mt-4">
+          <div className="border p-2 rounded-xl flex gap-2 items-center">
+            <Bookmark className="w-4 h-4" />
+            <Subheading>{t("MyApps.bookmark")}</Subheading>
+          </div>
+        </div>
+
         <div
           className={`${
             fontsize === "lg" ? "grid-cols-2" : "grid-cols-3"

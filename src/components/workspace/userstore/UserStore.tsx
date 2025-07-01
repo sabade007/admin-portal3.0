@@ -44,12 +44,12 @@ const Activity = () => {
         <Tab key="iam" title={<Subheading>{t("title1")}</Subheading>}>
           <IamUsers />
         </Tab>
-        <Tab key="registered" title={<Subheading>{t("title2")}</Subheading>}>
+        {/* <Tab key="registered" title={<Subheading>{t("title2")}</Subheading>}>
           <RegisteredUsers />
         </Tab>
         <Tab key="admin" title={<Subheading>{t("title3")}</Subheading>}>
           <AdminAddedusers />
-        </Tab>
+        </Tab> */}
         <Tab key="blocked" title={<Subheading>{t("title4")}</Subheading>}>
           <BlockedUsers />
         </Tab>

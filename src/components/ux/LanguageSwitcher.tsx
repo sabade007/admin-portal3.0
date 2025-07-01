@@ -34,7 +34,21 @@ export default function LanguageSwitcher({
 
   const languages: LanguageOption[] = [
     { key: "en", label: "English" },
-    { key: "sn", label: "ಕನ್ನಡ" },
+
+    { key: "ml", label: "മലയാളം" },
+    { key: "te", label: "తెలుగు" },
+    { key: "kn", label: "ಕನ್ನಡ" },
+    { key: "ta", label: "தமிழ்" },
+    { key: "ar", label: "العربية" },
+    { key: "bn", label: "বাংলা" },
+    { key: "zhCN", label: "中文" },
+    { key: "de", label: "Deutsch" },
+    { key: "fr", label: "Français" },
+    { key: "es", label: "Español" },
+    { key: "hi", label: "हिंदी" },
+    { key: "ja", label: "日本語" },
+    { key: "pt", label: "Português" },
+    { key: "ru", label: "Русский" },
   ];
 
   const handleChange = (key: string | number) => {
