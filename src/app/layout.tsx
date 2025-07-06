@@ -41,8 +41,8 @@ const ttnorms = localFont({
 export const metadata: Metadata = {
   title:
     env("NEXT_PUBLIC_USE_DEFAULT_LOGO_TAGLINE") === "true"
-      ? "Indryve-Portal"
-      : env("NEXT_PUBLIC_BRAND_NAME") || "Indryve-Portal",
+      ? "Indryve-Workspace"
+      : env("NEXT_PUBLIC_BRAND_NAME") || "Indryve-Workspace",
   description:
     env("NEXT_PUBLIC_USE_DEFAULT_LOGO_TAGLINE") === "true"
       ? "Accelerate your Collaboration"
